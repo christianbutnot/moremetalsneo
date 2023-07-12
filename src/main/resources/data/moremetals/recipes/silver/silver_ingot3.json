@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moremetals:silver_dust"
+  },
+  "result": "moremetals:silver_ingot",
+  "experience": 0.6,
+  "cookingtime": 200
+}

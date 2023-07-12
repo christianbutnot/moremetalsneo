@@ -1,0 +1,17 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"A A",
+		"A A"
+	],
+	"key": {
+		"A": {
+			"item": "moremetals:nickel_ingot"
+		}
+	},
+	"result": {
+		"item": "moremetals:nickel_boots",
+		"count": 1
+	}
+}

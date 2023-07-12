@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moremetals:rose_gold_dust"
+  },
+  "result": "royalcrowns:rose_gold_ingot",
+  "experience": 0.6,
+  "cookingtime": 200
+}
