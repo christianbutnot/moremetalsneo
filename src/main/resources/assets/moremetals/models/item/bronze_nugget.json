@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "moremetals:items/bronze_nugget"
+		"layer0": "moremetals:item/bronze_nugget"
 	}
 }

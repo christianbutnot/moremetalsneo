@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "moremetals:items/emerald_shears"
+		"layer0": "moremetals:item/emerald_shears"
 	}
 }

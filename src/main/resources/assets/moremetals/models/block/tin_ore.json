@@ -1,6 +1,6 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "moremetals:blocks/tin_ore"
+		"all": "moremetals:block/tin_ore"
 	}
 }

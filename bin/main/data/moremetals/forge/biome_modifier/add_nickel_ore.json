@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "moremetals:nickel_ore_placed",
+  "features": "moremetals:nickel_ore",
   "step": "underground_ores"
 }

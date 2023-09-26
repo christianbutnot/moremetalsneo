@@ -100,5 +100,5 @@
 	"item.moremetals.emerald_shears": "Emerald Shears",
 	"item.moremetals.netherite_shears": "Netherite Shears",
 	
-	"itemGroup.moremetals": "More Metals"
+	"creativetab.moremetals_tab": "More Metals"
 }

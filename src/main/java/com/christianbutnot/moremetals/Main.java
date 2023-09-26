@@ -1,11 +1,10 @@
 package com.christianbutnot.moremetals;
 
 import com.christianbutnot.moremetals.init.BlockInit;
+import com.christianbutnot.moremetals.init.CreativeTabs;
 import com.christianbutnot.moremetals.init.DurablesInit;
 import com.christianbutnot.moremetals.init.ItemInit;
 import com.christianbutnot.moremetals.loot.LootTableAdditiveMethod;
-import com.christianbutnot.moremetals.utils.OreGenUtil;
-import com.christianbutnot.moremetals.utils.OreGenPlacement;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,10 +26,9 @@ public class Main
         BlockInit.register(modEventBus);
         DurablesInit.register(modEventBus);
         
-        LootTableAdditiveMethod.register(modEventBus);
+        CreativeTabs.register(modEventBus);
         
-        OreGenUtil.register(modEventBus);
-        OreGenPlacement.register(modEventBus);
+        LootTableAdditiveMethod.register(modEventBus);
         
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

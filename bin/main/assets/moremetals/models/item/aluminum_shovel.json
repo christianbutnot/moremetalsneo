@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "moremetals:items/aluminum_shovel"
+		"layer0": "moremetals:item/aluminum_shovel"
 	}
 }
