@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_sword",
+		"id": "moremetals:tin_sword",
 		"count": 1
 	}
 }

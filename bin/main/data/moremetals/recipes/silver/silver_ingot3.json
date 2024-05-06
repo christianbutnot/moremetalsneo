@@ -3,7 +3,9 @@
   "ingredient": {
     "item": "moremetals:silver_dust"
   },
-  "result": "moremetals:silver_ingot",
+  "result": {
+    "id": "moremetals:silver_ingot"
+  },
   "experience": 0.6,
   "cookingtime": 200
 }

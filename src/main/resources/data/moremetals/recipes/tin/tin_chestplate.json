@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_chestplate",
+		"id": "moremetals:tin_chestplate",
 		"count": 1
 	}
 }

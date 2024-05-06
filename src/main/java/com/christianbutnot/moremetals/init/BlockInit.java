@@ -5,47 +5,54 @@ import java.util.function.Supplier;
 import com.christianbutnot.moremetals.Main;
 
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class BlockInit {
 	
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Main.MODID);
     
     
-    public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), CreativeTabs.MOREMETALS);
-    public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), CreativeTabs.MOREMETALS);
-    public static final RegistryObject<Block> NICKEL_ORE = registerBlock("nickel_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), CreativeTabs.MOREMETALS);
-    public static final RegistryObject<Block> ALUMINUM_ORE = registerBlock("aluminum_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), CreativeTabs.MOREMETALS);
+    public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> NICKEL_ORE = registerBlock("nickel_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ALUMINUM_ORE = registerBlock("aluminum_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    
+    public static final DeferredBlock<Block> LEAD_ORE = registerBlock("lead_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ZINC_ORE = registerBlock("zinc_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ENGULFED_COAL_ORE = registerBlock("engulfed_coal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
     
     
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
-        return toReturn;
-    }
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+		DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+		registerBlockItem(name, toReturn);
+		return toReturn;
+	}
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
-                                                                            CreativeModeTab tab) {
-        return ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
-    }
-    
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
-    }
+	private static <T extends Block> DeferredItem<BlockItem> registerBlockItem(String name, DeferredBlock<T> block) {
+		return ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	public static void register(IEventBus eventBus) {
+		BLOCKS.register(eventBus);
+	}
 }

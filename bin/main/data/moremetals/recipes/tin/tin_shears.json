@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_shears",
+		"id": "moremetals:tin_shears",
 		"count": 1
 	}
 }

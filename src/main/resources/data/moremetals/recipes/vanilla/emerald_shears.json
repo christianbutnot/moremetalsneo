@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:emerald_shears",
+		"id": "moremetals:emerald_shears",
 		"count": 1
 	}
 }

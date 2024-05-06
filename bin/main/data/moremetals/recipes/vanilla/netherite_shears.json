@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:netherite_shears",
+		"id": "moremetals:netherite_shears",
 		"count": 1
 	}
 }

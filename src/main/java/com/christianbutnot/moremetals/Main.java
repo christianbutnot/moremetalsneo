@@ -1,39 +1,25 @@
 package com.christianbutnot.moremetals;
 
 import com.christianbutnot.moremetals.init.BlockInit;
+import com.christianbutnot.moremetals.init.CreativeTabs;
 import com.christianbutnot.moremetals.init.DurablesInit;
 import com.christianbutnot.moremetals.init.ItemInit;
-import com.christianbutnot.moremetals.loot.LootTableAdditiveMethod;
-import com.christianbutnot.moremetals.utils.OreGenUtil;
-import com.christianbutnot.moremetals.utils.OreGenPlacement;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(Main.MODID)
-public class Main
-{
-    // Define mod id in a common place for everything to reference
+public class Main {
     public static final String MODID = "moremetals";
 
-    public Main()
-    {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ItemInit.register(modEventBus);
-        BlockInit.register(modEventBus);
-        DurablesInit.register(modEventBus);
+    public Main(IEventBus eventBus, ModContainer container) {
         
-        LootTableAdditiveMethod.register(modEventBus);
+    	ItemInit.register(eventBus);
+        BlockInit.register(eventBus);
+        DurablesInit.register(eventBus);
         
-        OreGenUtil.register(modEventBus);
-        OreGenPlacement.register(modEventBus);
+        CreativeTabs.register(eventBus);
         
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
     }
 }
-

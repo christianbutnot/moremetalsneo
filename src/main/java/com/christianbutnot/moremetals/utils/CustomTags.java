@@ -15,8 +15,6 @@ public class CustomTags {
 		public static final TagKey<Block> NEEDS_SILVER_TOOL = tag("needs_silver_tool");
 		public static final TagKey<Block> NEEDS_NICKEL_TOOL = tag("needs_nickel_tool");
 		
-		public static final TagKey<Block> MINEABLE_BY_MULTI_TOOL = BlockTags.create(new ResourceLocation(Main.MODID, "mineable/multi_tool"));
-		
 		private static TagKey<Block> tag(String name) {
 			return BlockTags.create(new ResourceLocation(Main.MODID, name));
 			
@@ -26,9 +24,11 @@ public class CustomTags {
 		public static final TagKey<Block> NICKEL = forgeTag("ores");
 		public static final TagKey<Block> SILVER = forgeTag("ores");
 		public static final TagKey<Block> TIN = forgeTag("ores");
+		public static final TagKey<Block> LEAD = forgeTag("ores");
+		public static final TagKey<Block> ZINC = forgeTag("ores");
 		
 		private static TagKey<Block> forgeTag(String name) {
-			return BlockTags.create(new ResourceLocation("forge", name));
+			return BlockTags.create(new ResourceLocation("c", name));
 		}
 	}
 }

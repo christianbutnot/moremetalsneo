@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_shovel",
+		"id": "moremetals:tin_shovel",
 		"count": 1
 	}
 }

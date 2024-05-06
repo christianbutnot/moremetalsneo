@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "moremetals:items/tin_nugget"
+		"layer0": "moremetals:item/tin_nugget"
 	}
 }

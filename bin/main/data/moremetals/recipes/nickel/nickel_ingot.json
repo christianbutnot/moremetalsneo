@@ -3,7 +3,9 @@
   "ingredient": {
     "item": "moremetals:nickel_ore"
   },
-  "result": "moremetals:nickel_ingot",
+  "result": {
+    "id": "moremetals:nickel_ingot"
+  },
   "experience": 0.6,
   "cookingtime": 200
 }

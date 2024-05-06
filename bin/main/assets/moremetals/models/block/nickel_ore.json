@@ -1,6 +1,6 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "moremetals:blocks/nickel_ore"
+		"all": "moremetals:block/nickel_ore"
 	}
 }

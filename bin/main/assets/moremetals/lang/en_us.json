@@ -5,16 +5,18 @@
 	"item.moremetals.steel_ingot": "Steel Ingot",
 	"item.moremetals.tin_ingot": "Tin Ingot",
 	"item.moremetals.bronze_ingot": "Bronze Ingot",
+	"item.moremetals.lead_ingot": "Lead Ingot",
+	"item.moremetals.zinc_ingot": "Zinc Ingot",
 	
-	"item.moremetals.rose_gold_nugget": "Rose Gold Nugget",
 	"item.moremetals.silver_nugget": "Silver Nugget",
 	"item.moremetals.aluminum_nugget": "Aluminum Nugget",
 	"item.moremetals.nickel_nugget": "Nickel Nugget",
 	"item.moremetals.steel_nugget": "Steel Nugget",
 	"item.moremetals.tin_nugget": "Tin Nugget",
 	"item.moremetals.bronze_nugget": "Bronze Nugget",
+	"item.moremetals.lead_nugget": "Lead Nugget",
+	"item.moremetals.zinc_nugget": "Zinc Nugget",
 	
-	"item.moremetals.rose_gold_dust": "Rose Gold Dust",
 	"item.moremetals.silver_dust": "Silver Dust",
 	"item.moremetals.aluminum_dust": "Aluminum Dust",
 	"item.moremetals.nickel_dust": "Nickel Dust",
@@ -24,12 +26,23 @@
 	"item.moremetals.iron_dust": "Iron Dust",
 	"item.moremetals.coal_dust": "Coal Dust",
 	"item.moremetals.bronze_dust": "Bronze Dust",
+	"item.moremetals.zinc_dust": "Zinc Dust",
+	"item.moremetals.lead_dust": "Lead Dust",
+	"item.moremetals.sulfur_powder": "Sulfur Powder",
+	
+	"item.moremetals.engulfed_coal": "Engulfed Coal",
+	"item.moremetals.enigmatic_coal": "Enigmatic Coal",
+	"item.moremetals.immortal_coal": "Immortal Coal",
 	
 	"block.moremetals.tin_ore": "Tin Ore",
 	"block.moremetals.copper_ore": "Copper Ore",
 	"block.moremetals.aluminum_ore": "Aluminum Ore",
 	"block.moremetals.nickel_ore": "Nickel Ore",
 	"block.moremetals.silver_ore": "Silver Ore",
+	"block.moremetals.zinc_ore": "Zinc Ore",
+	"block.moremetals.lead_ore": "Lead Ore",
+	"block.moremetals.engulfed_coal_ore": "Engulfed Coal Ore",
+	"block.moremetals.sulfur_ore": "Sulfur Ore",
 	
 	"item.moremetals.copper_sword": "Copper Sword",
 	"item.moremetals.copper_pickaxe": "Copper Pickaxe",
@@ -100,5 +113,5 @@
 	"item.moremetals.emerald_shears": "Emerald Shears",
 	"item.moremetals.netherite_shears": "Netherite Shears",
 	
-	"itemGroup.moremetals": "More Metals"
+	"creativetab.moremetals_tab": "More Metals"
 }

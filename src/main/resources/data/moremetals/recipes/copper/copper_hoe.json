@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:copper_hoe",
+		"id": "moremetals:copper_hoe",
 		"count": 1
 	}
 }

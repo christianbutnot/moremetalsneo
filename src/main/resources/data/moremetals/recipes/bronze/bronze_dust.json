@@ -12,7 +12,7 @@
 			}
 	},
 	"result": {
-		"item": "moremetals:bronze_dust",
+		"id": "moremetals:bronze_dust",
 		"count": 1
 	}
 }

@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_helmet",
+		"id": "moremetals:tin_helmet",
 		"count": 1
 	}
 }

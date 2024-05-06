@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_pickaxe",
+		"id": "moremetals:silver_pickaxe",
 		"count": 1
 	}
 }

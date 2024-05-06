@@ -12,7 +12,7 @@
 			}
 	},
 	"result": {
-		"item": "moremetals:steel_dust",
+		"id": "moremetals:steel_dust",
 		"count": 1
 	}
 }

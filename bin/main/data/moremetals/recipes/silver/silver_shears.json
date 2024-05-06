@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_shears",
+		"id": "moremetals:silver_shears",
 		"count": 1
 	}
 }

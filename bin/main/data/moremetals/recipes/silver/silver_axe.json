@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_axe",
+		"id": "moremetals:silver_axe",
 		"count": 1
 	}
 }

@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:copper_boots",
+		"id": "moremetals:copper_boots",
 		"count": 1
 	}
 }

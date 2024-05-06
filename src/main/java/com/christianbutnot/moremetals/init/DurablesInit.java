@@ -2,12 +2,11 @@ package com.christianbutnot.moremetals.init;
 
 import com.christianbutnot.moremetals.Main;
 import com.christianbutnot.moremetals.common.items.CustomShearsItem;
-import com.christianbutnot.moremetals.common.items.armor.CustomArmorMaterials;
-import com.christianbutnot.moremetals.common.items.tools.CustomTiers;
-import com.christianbutnot.moremetals.common.items.tools.MultiTools;
+import com.christianbutnot.moremetals.common.items.armor.CustomArmorMaterial;
+import com.christianbutnot.moremetals.common.items.tools.CustomTiersEnum;
 
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorItem.Type;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -15,206 +14,154 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class DurablesInit {
 
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MODID);
+	public static final DeferredRegister.Items DURABLES = DeferredRegister.createItems(Main.MODID);
 
-	//  multitools
-	//public static final RegistryObject<Item> WOOD_MULTI_TOOL = ITEMS.register("wood_multi_tool", () -> new MultiTools(Tiers.WOOD));
-	// tier1 shears
-	public static final RegistryObject<Item> WOOD_SHEARS = ITEMS.register("wood_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(64).rarity(Rarity.COMMON)));
-	public static final RegistryObject<Item> STONE_SHEARS = ITEMS.register("stone_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(128).rarity(Rarity.COMMON)));
+	// multitools
+	// public static final DeferredItem<Item> WOOD_MULTI_TOOL =
+	// DURABLES.register("wood_multi_tool", () -> new MultiTools(Tiers.WOOD));
 	// tier2 shears
-	public static final RegistryObject<Item> ALUMINUM_SHEARS = ITEMS.register("aluminum_shears",
-			() -> new CustomShearsItem(
-					new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(256).rarity(Rarity.UNCOMMON)));
-	public static final RegistryObject<Item> COPPER_SHEARS = ITEMS.register("copper_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(256).rarity(Rarity.UNCOMMON)));
-	public static final RegistryObject<Item> TIN_SHEARS = ITEMS.register("tin_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(256).rarity(Rarity.UNCOMMON)));
-	public static final RegistryObject<Item> ROSE_GOLD_SHEARS = ITEMS.register("rose_gold_shears",
-			() -> new CustomShearsItem(
-					new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(256).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> ALUMINUM_SHEARS = DURABLES.register("aluminum_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> COPPER_SHEARS = DURABLES.register("copper_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> TIN_SHEARS = DURABLES.register("tin_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> ROSE_GOLD_SHEARS = DURABLES.register("rose_gold_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
 	// tier3 shears
-	public static final RegistryObject<Item> BRONZE_SHEARS = ITEMS.register("bronze_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(512).rarity(Rarity.UNCOMMON)));
-	public static final RegistryObject<Item> NICKEL_SHEARS = ITEMS.register("nickel_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(512).rarity(Rarity.UNCOMMON)));
-	public static final RegistryObject<Item> SILVER_SHEARS = ITEMS.register("silver_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(512).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> BRONZE_SHEARS = DURABLES.register("bronze_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(512).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> NICKEL_SHEARS = DURABLES.register("nickel_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(512).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> SILVER_SHEARS = DURABLES.register("silver_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(512).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> LEAD_SHEARS = DURABLES.register("lead_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(512).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> ZINC_SHEARS = DURABLES.register("zinc_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(512).rarity(Rarity.UNCOMMON)));
 	// tier4 shears
-	public static final RegistryObject<Item> STEEL_SHEARS = ITEMS.register("steel_shears", () -> new CustomShearsItem(
-			new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(1024).rarity(Rarity.RARE)));
-	public static final RegistryObject<Item> DIAMOND_SHEARS = ITEMS.register("diamond_shears",
-			() -> new CustomShearsItem(
-					new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(1024).rarity(Rarity.RARE)));
-	public static final RegistryObject<Item> EMERALD_SHEARS = ITEMS.register("emerald_shears",
-			() -> new CustomShearsItem(
-					new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(1024).rarity(Rarity.RARE)));
+	public static final DeferredItem<Item> STEEL_SHEARS = DURABLES.register("steel_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(1024).rarity(Rarity.RARE)));
+	public static final DeferredItem<Item> DIAMOND_SHEARS = DURABLES.register("diamond_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(1024).rarity(Rarity.RARE)));
+	public static final DeferredItem<Item> EMERALD_SHEARS = DURABLES.register("emerald_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(1024).rarity(Rarity.RARE)));
 	// tier5 shears
-	public static final RegistryObject<Item> NETHERITE_SHEARS = ITEMS.register("netherite_shears",
-			() -> new CustomShearsItem(
-					new Item.Properties().tab(CreativeTabs.MOREMETALS).defaultDurability(2048).rarity(Rarity.EPIC)));
+	public static final DeferredItem<Item> NETHERITE_SHEARS = DURABLES.register("netherite_shears",
+			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(2048).rarity(Rarity.EPIC)));
 
 	// copper tools
-	public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
-            () -> new SwordItem(CustomTiers.COPPER, 2, -2.4f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
-            () -> new PickaxeItem(CustomTiers.COPPER, 1, -2.8f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
-            () -> new AxeItem(CustomTiers.COPPER, 6, -3.1f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel",
-            () -> new ShovelItem(CustomTiers.COPPER, 1.5f, -3f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe",
-            () -> new HoeItem(CustomTiers.COPPER, -2, 3f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_SWORD = DURABLES.register("copper_sword",
+			() -> new SwordItem(CustomTiersEnum.COPPER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_PICKAXE = DURABLES.register("copper_pickaxe",
+			() -> new PickaxeItem(CustomTiersEnum.COPPER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_AXE = DURABLES.register("copper_axe",
+			() -> new AxeItem(CustomTiersEnum.COPPER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_SHOVEL = DURABLES.register("copper_shovel",
+			() -> new ShovelItem(CustomTiersEnum.COPPER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_HOE = DURABLES.register("copper_hoe",
+			() -> new HoeItem(CustomTiersEnum.COPPER, new Item.Properties().stacksTo(1)));
 	// copper armor
-	public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
-			() -> new ArmorItem(CustomArmorMaterials.COPPER, EquipmentSlot.HEAD,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
-			() -> new ArmorItem(CustomArmorMaterials.COPPER, EquipmentSlot.CHEST,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register("copper_leggings",
-			() -> new ArmorItem(CustomArmorMaterials.COPPER, EquipmentSlot.LEGS,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots",
-			() -> new ArmorItem(CustomArmorMaterials.COPPER, EquipmentSlot.FEET,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
+	public static final DeferredItem<Item> COPPER_HELMET = DURABLES.register("copper_helmet",
+			() -> new ArmorItem(CustomArmorMaterial.COPPER, Type.HELMET, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_CHESTPLATE = DURABLES.register("copper_chestplate",
+			() -> new ArmorItem(CustomArmorMaterial.COPPER, Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_LEGGINGS = DURABLES.register("copper_leggings",
+			() -> new ArmorItem(CustomArmorMaterial.COPPER, Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> COPPER_BOOTS = DURABLES.register("copper_boots",
+			() -> new ArmorItem(CustomArmorMaterial.COPPER, Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 	// aluminum tools
-	public static final RegistryObject<Item> ALUMINUM_SWORD = ITEMS.register("aluminum_sword",
-            () -> new SwordItem(CustomTiers.ALUMINUM, 2, -2.4f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> ALUMINUM_PICKAXE = ITEMS.register("aluminum_pickaxe",
-            () -> new PickaxeItem(CustomTiers.ALUMINUM, 1, -2.8f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> ALUMINUM_AXE = ITEMS.register("aluminum_axe",
-            () -> new AxeItem(CustomTiers.ALUMINUM, 6, -3.1f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> ALUMINUM_SHOVEL = ITEMS.register("aluminum_shovel",
-            () -> new ShovelItem(CustomTiers.ALUMINUM, 1.5f, -3f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> ALUMINUM_HOE = ITEMS.register("aluminum_hoe",
-            () -> new HoeItem(CustomTiers.ALUMINUM, -2, -1,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_SWORD = DURABLES.register("aluminum_sword",
+			() -> new SwordItem(CustomTiersEnum.ALUMINUM, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_PICKAXE = DURABLES.register("aluminum_pickaxe",
+			() -> new PickaxeItem(CustomTiersEnum.ALUMINUM, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_AXE = DURABLES.register("aluminum_axe",
+			() -> new AxeItem(CustomTiersEnum.ALUMINUM, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_SHOVEL = DURABLES.register("aluminum_shovel",
+			() -> new ShovelItem(CustomTiersEnum.ALUMINUM, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_HOE = DURABLES.register("aluminum_hoe",
+			() -> new HoeItem(CustomTiersEnum.ALUMINUM, new Item.Properties().stacksTo(1)));
 	// aluminum armor
-	public static final RegistryObject<Item> ALUMINUM_HELMET = ITEMS.register("aluminum_helmet",
-			() -> new ArmorItem(CustomArmorMaterials.ALUMINUM, EquipmentSlot.HEAD,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> ALUMINUM_CHESTPLATE = ITEMS.register("aluminum_chestplate",
-			() -> new ArmorItem(CustomArmorMaterials.ALUMINUM, EquipmentSlot.CHEST,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> ALUMINUM_LEGGINGS = ITEMS.register("aluminum_leggings",
-			() -> new ArmorItem(CustomArmorMaterials.ALUMINUM, EquipmentSlot.LEGS,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> ALUMINUM_BOOTS = ITEMS.register("aluminum_boots",
-			() -> new ArmorItem(CustomArmorMaterials.ALUMINUM, EquipmentSlot.FEET,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
+	public static final DeferredItem<Item> ALUMINUM_HELMET = DURABLES.register("aluminum_helmet",
+			() -> new ArmorItem(CustomArmorMaterial.ALUMINUM, Type.HELMET, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_CHESTPLATEPLATE = DURABLES.register("aluminum_chestplate",
+			() -> new ArmorItem(CustomArmorMaterial.ALUMINUM, Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_LEGGINGS = DURABLES.register("aluminum_leggings",
+			() -> new ArmorItem(CustomArmorMaterial.ALUMINUM, Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> ALUMINUM_BOOTS = DURABLES.register("aluminum_boots",
+			() -> new ArmorItem(CustomArmorMaterial.ALUMINUM, Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 	// tin tools
-	public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword",
-            () -> new SwordItem(CustomTiers.TIN, 2, -2.4f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register("tin_pickaxe",
-            () -> new PickaxeItem(CustomTiers.TIN, 1, -2.8f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> TIN_AXE = ITEMS.register("tin_axe",
-            () -> new AxeItem(CustomTiers.TIN, 6, -3.1f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register("tin_shovel",
-            () -> new ShovelItem(CustomTiers.TIN, 1.5f, -3f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> TIN_HOE = ITEMS.register("tin_hoe",
-            () -> new HoeItem(CustomTiers.TIN, -2, -1,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
+	public static final DeferredItem<Item> TIN_SWORD = DURABLES.register("tin_sword",
+			() -> new SwordItem(CustomTiersEnum.TIN, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_PICKAXE = DURABLES.register("tin_pickaxe",
+			() -> new PickaxeItem(CustomTiersEnum.TIN, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_AXE = DURABLES.register("tin_axe",
+			() -> new AxeItem(CustomTiersEnum.TIN, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_SHOVEL = DURABLES.register("tin_shovel",
+			() -> new ShovelItem(CustomTiersEnum.TIN, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_HOE = DURABLES.register("tin_hoe",
+			() -> new HoeItem(CustomTiersEnum.TIN, new Item.Properties().stacksTo(1)));
 	// tin armor
-	public static final RegistryObject<Item> TIN_HELMET = ITEMS.register("tin_helmet",
-			() -> new ArmorItem(CustomArmorMaterials.TIN, EquipmentSlot.HEAD,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register("tin_chestplate",
-			() -> new ArmorItem(CustomArmorMaterials.TIN, EquipmentSlot.CHEST,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register("tin_leggings",
-			() -> new ArmorItem(CustomArmorMaterials.TIN, EquipmentSlot.LEGS,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register("tin_boots",
-			() -> new ArmorItem(CustomArmorMaterials.TIN, EquipmentSlot.FEET,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
+	public static final DeferredItem<Item> TIN_HELMET = DURABLES.register("tin_helmet",
+			() -> new ArmorItem(CustomArmorMaterial.TIN, Type.HELMET, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_CHESTPLATEPLATE = DURABLES.register("tin_chestplate",
+			() -> new ArmorItem(CustomArmorMaterial.TIN, Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_LEGGINGS = DURABLES.register("tin_leggings",
+			() -> new ArmorItem(CustomArmorMaterial.TIN, Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> TIN_BOOTS = DURABLES.register("tin_boots",
+			() -> new ArmorItem(CustomArmorMaterial.TIN, Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 	// silver tools
-	public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
-            () -> new SwordItem(CustomTiers.SILVER, 3, -2.4f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register("silver_pickaxe",
-            () -> new PickaxeItem(CustomTiers.SILVER, 1, -2.8f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> SILVER_AXE = ITEMS.register("silver_axe",
-            () -> new AxeItem(CustomTiers.SILVER, 6, -3.1f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register("silver_shovel",
-            () -> new ShovelItem(CustomTiers.SILVER, 1.5f, -3f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> SILVER_HOE = ITEMS.register("silver_hoe",
-            () -> new HoeItem(CustomTiers.SILVER, -2, -1,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_SWORD = DURABLES.register("silver_sword",
+			() -> new SwordItem(CustomTiersEnum.SILVER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_PICKAXE = DURABLES.register("silver_pickaxe",
+			() -> new PickaxeItem(CustomTiersEnum.SILVER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_AXE = DURABLES.register("silver_axe",
+			() -> new AxeItem(CustomTiersEnum.SILVER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_SHOVEL = DURABLES.register("silver_shovel",
+			() -> new ShovelItem(CustomTiersEnum.SILVER, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_HOE = DURABLES.register("silver_hoe",
+			() -> new HoeItem(CustomTiersEnum.SILVER, new Item.Properties().stacksTo(1)));
 	// silver armor
-	public static final RegistryObject<Item> SILVER_HELMET = ITEMS.register("silver_helmet",
-			() -> new ArmorItem(CustomArmorMaterials.SILVER, EquipmentSlot.HEAD,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> SILVER_CHESTPLATE = ITEMS.register("silver_chestplate",
-			() -> new ArmorItem(CustomArmorMaterials.SILVER, EquipmentSlot.CHEST,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> SILVER_LEGGINGS = ITEMS.register("silver_leggings",
-			() -> new ArmorItem(CustomArmorMaterials.SILVER, EquipmentSlot.LEGS,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> SILVER_BOOTS = ITEMS.register("silver_boots",
-			() -> new ArmorItem(CustomArmorMaterials.SILVER, EquipmentSlot.FEET,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
+	public static final DeferredItem<Item> SILVER_HELMET = DURABLES.register("silver_helmet",
+			() -> new ArmorItem(CustomArmorMaterial.SILVER, Type.HELMET, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_CHESTPLATEPLATE = DURABLES.register("silver_chestplate",
+			() -> new ArmorItem(CustomArmorMaterial.SILVER, Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_LEGGINGS = DURABLES.register("silver_leggings",
+			() -> new ArmorItem(CustomArmorMaterial.SILVER, Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> SILVER_BOOTS = DURABLES.register("silver_boots",
+			() -> new ArmorItem(CustomArmorMaterial.SILVER, Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 	// nickel tools
-	public static final RegistryObject<Item> NICKEL_SWORD = ITEMS.register("nickel_sword",
-            () -> new SwordItem(CustomTiers.NICKEL, 3, -2.4f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> NICKEL_PICKAXE = ITEMS.register("nickel_pickaxe",
-            () -> new PickaxeItem(CustomTiers.NICKEL, 1, -2.8f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> NICKEL_AXE = ITEMS.register("nickel_axe",
-            () -> new AxeItem(CustomTiers.NICKEL, 6, -3.1f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> NICKEL_SHOVEL = ITEMS.register("nickel_shovel",
-            () -> new ShovelItem(CustomTiers.NICKEL, 1.5f, -3f,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
-	public static final RegistryObject<Item> NICKEL_HOE = ITEMS.register("nickel_hoe",
-            () -> new HoeItem(CustomTiers.NICKEL, -2, -1,
-                    new Item.Properties().tab(CreativeTabs.MOREMETALS).stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_SWORD = DURABLES.register("nickel_sword",
+			() -> new SwordItem(CustomTiersEnum.NICKEL, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_PICKAXE = DURABLES.register("nickel_pickaxe",
+			() -> new PickaxeItem(CustomTiersEnum.NICKEL, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_AXE = DURABLES.register("nickel_axe",
+			() -> new AxeItem(CustomTiersEnum.NICKEL, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_SHOVEL = DURABLES.register("nickel_shovel",
+			() -> new ShovelItem(CustomTiersEnum.NICKEL, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_HOE = DURABLES.register("nickel_hoe",
+			() -> new HoeItem(CustomTiersEnum.NICKEL, new Item.Properties().stacksTo(1)));
 	// nickel armor
-	public static final RegistryObject<Item> NICKEL_HELMET = ITEMS.register("nickel_helmet",
-			() -> new ArmorItem(CustomArmorMaterials.NICKEL, EquipmentSlot.HEAD,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> NICKEL_CHESTPLATE = ITEMS.register("nickel_chestplate",
-			() -> new ArmorItem(CustomArmorMaterials.NICKEL, EquipmentSlot.CHEST,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> NICKEL_LEGGINGS = ITEMS.register("nickel_leggings",
-			() -> new ArmorItem(CustomArmorMaterials.NICKEL, EquipmentSlot.LEGS,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> NICKEL_BOOTS = ITEMS.register("nickel_boots",
-			() -> new ArmorItem(CustomArmorMaterials.NICKEL, EquipmentSlot.FEET,
-					new Item.Properties().tab(CreativeTabs.MOREMETALS)));
+	public static final DeferredItem<Item> NICKEL_HELMET = DURABLES.register("nickel_helmet",
+			() -> new ArmorItem(CustomArmorMaterial.NICKEL, Type.HELMET, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_CHESTPLATEPLATE = DURABLES.register("nickel_chestplate",
+			() -> new ArmorItem(CustomArmorMaterial.NICKEL, Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_LEGGINGS = DURABLES.register("nickel_leggings",
+			() -> new ArmorItem(CustomArmorMaterial.NICKEL, Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> NICKEL_BOOTS = DURABLES.register("nickel_boots",
+			() -> new ArmorItem(CustomArmorMaterial.NICKEL, Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 	public static void register(IEventBus eventBus) {
-		ITEMS.register(eventBus);
+		DURABLES.register(eventBus);
 	}
 }

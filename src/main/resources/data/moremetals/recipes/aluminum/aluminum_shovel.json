@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:aluminum_shovel",
+		"id": "moremetals:aluminum_shovel",
 		"count": 1
 	}
 }

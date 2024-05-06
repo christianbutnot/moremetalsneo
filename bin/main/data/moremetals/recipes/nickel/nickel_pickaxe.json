@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:nickel_pickaxe",
+		"id": "moremetals:nickel_pickaxe",
 		"count": 1
 	}
 }

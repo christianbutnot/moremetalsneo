@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_sword",
+		"id": "moremetals:silver_sword",
 		"count": 1
 	}
 }

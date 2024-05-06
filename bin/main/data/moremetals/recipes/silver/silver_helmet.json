@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_helmet",
+		"id": "moremetals:silver_helmet",
 		"count": 1
 	}
 }

@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_boots",
+		"id": "moremetals:tin_boots",
 		"count": 1
 	}
 }

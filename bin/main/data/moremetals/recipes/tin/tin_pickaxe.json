@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_pickaxe",
+		"id": "moremetals:tin_pickaxe",
 		"count": 1
 	}
 }

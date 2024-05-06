@@ -9,7 +9,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:aluminum_nugget",
+		"id": "moremetals:aluminum_nugget",
 		"count": 9
 	}
 }

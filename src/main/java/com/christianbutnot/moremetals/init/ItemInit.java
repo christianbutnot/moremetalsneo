@@ -1,72 +1,104 @@
 package com.christianbutnot.moremetals.init;
 
 import com.christianbutnot.moremetals.Main;
+import com.christianbutnot.moremetals.common.items.EngulfedCoalItem;
 import com.christianbutnot.moremetals.common.items.ResourceItem;
+import com.christianbutnot.moremetals.common.items.SulfurItem;
 
 import net.minecraft.world.item.Item;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ItemInit {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, Main.MODID);
-    
-    //INGOTS
-	public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
-			() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
-			() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> ALUMINUM_INGOT = ITEMS.register("aluminum_ingot",
-			() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot",
-			() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
-			() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-	public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
-			() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
+	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Main.MODID);
+
+	//NON-ALLOY METALS
+	public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ALUMINUM_INGOT = ITEMS.register("aluminum_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ZINC_INGOT = ITEMS.register("zinc_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	//ALLOYS
+	public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ELECTRUM_INGOT = ITEMS.register("electrum_ingot",
+			() -> new ResourceItem(new Item.Properties()));
+
+	// NUGGETS
+	//NON ALLOY METALS
+	public static final DeferredItem<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> LEAD_NUGGET = ITEMS.register("lead_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	//ALLOYS
+	public static final DeferredItem<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ELECTRUM_NUGGET = ITEMS.register("electrum_nugget",
+			() -> new ResourceItem(new Item.Properties()));
+
+	// DUSTS
+	//VANILLA
+	public static final DeferredItem<Item> COPPER_DUST = ITEMS.register("copper_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> COAL_DUST = ITEMS.register("coal_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	//NON-ALLOY METALS
+	public static final DeferredItem<Item> TIN_DUST = ITEMS.register("tin_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> SILVER_DUST = ITEMS.register("silver_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> NICKEL_DUST = ITEMS.register("nickel_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> LEAD_DUST = ITEMS.register("lead_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ZINC_DUST = ITEMS.register("zinc_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	//ALLOYS
+	public static final DeferredItem<Item> STEEL_DUST = ITEMS.register("steel_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> BRONZE_DUST = ITEMS.register("bronze_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> ELECTRUM_DUST = ITEMS.register("electrum_dust",
+			() -> new ResourceItem(new Item.Properties()));
+	//MISC DUSTS
+	public static final DeferredItem<Item> SULFUR_POWDER = ITEMS.register("sulfur_powder",
+			() -> new SulfurItem(new Item.Properties(), 1200));
+	
+
+	// FUELS
+	public static final DeferredItem<Item> ENGULFED_COAL = ITEMS.register("engulfed_coal",
+			() -> new EngulfedCoalItem(new Item.Properties(), 2400));
+	public static final DeferredItem<Item> ENIGMATIC_COAL = ITEMS.register("enigmatic_coal",
+			() -> new EngulfedCoalItem(new Item.Properties(), 110000));
+	public static final DeferredItem<Item> IMMORTAL_COAL = ITEMS.register("immortal_coal",
+			() -> new EngulfedCoalItem(new Item.Properties(), 550000));
 
 
-	//NUGGETS
-		public static final RegistryObject<Item> ROSE_GOLD_NUGGET = ITEMS.register("rose_gold_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-
-	//DUSTS
-		public static final RegistryObject<Item> ROSE_GOLD_DUST = ITEMS.register("rose_gold_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> TIN_DUST = ITEMS.register("tin_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> SILVER_DUST = ITEMS.register("silver_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> NICKEL_DUST = ITEMS.register("nickel_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> BRONZE_DUST = ITEMS.register("bronze_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> COAL_DUST = ITEMS.register("coal_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-		public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust",
-				() -> new ResourceItem(new Item.Properties().tab(CreativeTabs.MOREMETALS)));
-
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+	public static void register(IEventBus eventBus) {
+		ITEMS.register(eventBus);
+	}
 }

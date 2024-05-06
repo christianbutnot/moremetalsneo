@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:aluminum_ingot",
+		"id": "moremetals:aluminum_ingot",
 		"count": 1
 	}
 }

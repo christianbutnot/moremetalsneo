@@ -3,7 +3,9 @@
   "ingredient": {
     "item": "moremetals:tin_ore"
   },
-  "result": "moremetals:tin_ingot",
+  "result": {
+    "id": "moremetals:tin_ingot"
+  },
   "experience": 0.6,
   "cookingtime": 200
 }

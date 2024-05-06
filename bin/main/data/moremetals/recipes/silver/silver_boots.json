@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_boots",
+		"id": "moremetals:silver_boots",
 		"count": 1
 	}
 }

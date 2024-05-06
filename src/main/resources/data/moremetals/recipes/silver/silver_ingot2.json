@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_ingot",
+		"id": "moremetals:silver_ingot",
 		"count": 1
 	}
 }

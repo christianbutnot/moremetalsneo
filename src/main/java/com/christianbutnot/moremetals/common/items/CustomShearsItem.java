@@ -14,12 +14,4 @@ public class CustomShearsItem extends ShearsItem {
 	public CustomShearsItem(Properties p_43074_) {
 		super(p_43074_);
 	}
-		
-		//@Override
-		//public void appendHoverText(ItemStack stack, Level worldIn, List<Component> tooltip, TooltipFlag flagIn)
-		//{
-		 //   super.appendHoverText(stack, worldIn, tooltip, flagIn);
-
-//		    tooltip.add(Component.nullToEmpty("§d§o"));
-	//	}
 	}

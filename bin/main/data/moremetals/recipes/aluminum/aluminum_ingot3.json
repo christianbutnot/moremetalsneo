@@ -3,7 +3,9 @@
   "ingredient": {
     "item": "moremetals:aluminum_dust"
   },
-  "result": "moremetals:aluminum_ingot",
+  "result": {
+    "id": "moremetals:aluminum_ingot"
+  },
   "experience": 0.6,
   "cookingtime": 200
 }

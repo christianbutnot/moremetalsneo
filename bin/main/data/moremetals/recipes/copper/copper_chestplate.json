@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:copper_chestplate",
+		"id": "moremetals:copper_chestplate",
 		"count": 1
 	}
 }

@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:copper_axe",
+		"id": "moremetals:copper_axe",
 		"count": 1
 	}
 }

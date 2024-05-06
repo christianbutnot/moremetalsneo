@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:bronze_shears",
+		"id": "moremetals:bronze_shears",
 		"count": 1
 	}
 }

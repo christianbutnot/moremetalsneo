@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:nickel_shovel",
+		"id": "moremetals:nickel_shovel",
 		"count": 1
 	}
 }

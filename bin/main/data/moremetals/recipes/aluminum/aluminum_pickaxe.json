@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:aluminum_pickaxe",
+		"id": "moremetals:aluminum_pickaxe",
 		"count": 1
 	}
 }

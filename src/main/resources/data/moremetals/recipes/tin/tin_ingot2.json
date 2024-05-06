@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:tin_ingot",
+		"id": "moremetals:tin_ingot",
 		"count": 1
 	}
 }

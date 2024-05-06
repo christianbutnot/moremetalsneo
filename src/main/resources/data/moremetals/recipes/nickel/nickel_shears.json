@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:nickel_shears",
+		"id": "moremetals:nickel_shears",
 		"count": 1
 	}
 }

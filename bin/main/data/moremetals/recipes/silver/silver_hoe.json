@@ -14,7 +14,7 @@
 		}
 	},
 	"result": {
-		"item": "moremetals:silver_hoe",
+		"id": "moremetals:silver_hoe",
 		"count": 1
 	}
 }
