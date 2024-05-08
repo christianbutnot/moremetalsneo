@@ -7,6 +7,7 @@
 	"item.moremetals.bronze_ingot": "Bronze Ingot",
 	"item.moremetals.lead_ingot": "Lead Ingot",
 	"item.moremetals.zinc_ingot": "Zinc Ingot",
+	"item.moremetals.electrum_ingot": "Electrum Ingot",
 	
 	"item.moremetals.silver_nugget": "Silver Nugget",
 	"item.moremetals.aluminum_nugget": "Aluminum Nugget",
@@ -16,6 +17,7 @@
 	"item.moremetals.bronze_nugget": "Bronze Nugget",
 	"item.moremetals.lead_nugget": "Lead Nugget",
 	"item.moremetals.zinc_nugget": "Zinc Nugget",
+	"item.moremetals.electrum_nugget": "Electrum Nugget",
 	
 	"item.moremetals.silver_dust": "Silver Dust",
 	"item.moremetals.aluminum_dust": "Aluminum Dust",
@@ -25,6 +27,7 @@
 	"item.moremetals.copper_dust": "Copper Dust",
 	"item.moremetals.iron_dust": "Iron Dust",
 	"item.moremetals.coal_dust": "Coal Dust",
+	"item.moremetals.gold_dust": "Gold Dust",
 	"item.moremetals.bronze_dust": "Bronze Dust",
 	"item.moremetals.zinc_dust": "Zinc Dust",
 	"item.moremetals.lead_dust": "Lead Dust",

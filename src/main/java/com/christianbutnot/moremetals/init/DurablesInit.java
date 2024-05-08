@@ -32,8 +32,6 @@ public class DurablesInit {
 			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
 	public static final DeferredItem<Item> TIN_SHEARS = DURABLES.register("tin_shears",
 			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
-	public static final DeferredItem<Item> ROSE_GOLD_SHEARS = DURABLES.register("rose_gold_shears",
-			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(256).rarity(Rarity.UNCOMMON)));
 	// tier3 shears
 	public static final DeferredItem<Item> BRONZE_SHEARS = DURABLES.register("bronze_shears",
 			() -> new CustomShearsItem(new Item.Properties().stacksTo(1).durability(512).rarity(Rarity.UNCOMMON)));

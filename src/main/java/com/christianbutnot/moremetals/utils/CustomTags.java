@@ -20,14 +20,14 @@ public class CustomTags {
 			
 		}
 		
-		public static final TagKey<Block> ALUMINUM = forgeTag("ores");
-		public static final TagKey<Block> NICKEL = forgeTag("ores");
-		public static final TagKey<Block> SILVER = forgeTag("ores");
-		public static final TagKey<Block> TIN = forgeTag("ores");
-		public static final TagKey<Block> LEAD = forgeTag("ores");
-		public static final TagKey<Block> ZINC = forgeTag("ores");
+		public static final TagKey<Block> ALUMINUM = neoforgeTag("ores");
+		public static final TagKey<Block> NICKEL = neoforgeTag("ores");
+		public static final TagKey<Block> SILVER = neoforgeTag("ores");
+		public static final TagKey<Block> TIN = neoforgeTag("ores");
+		public static final TagKey<Block> LEAD = neoforgeTag("ores");
+		public static final TagKey<Block> ZINC = neoforgeTag("ores");
 		
-		private static TagKey<Block> forgeTag(String name) {
+		private static TagKey<Block> neoforgeTag(String name) {
 			return BlockTags.create(new ResourceLocation("c", name));
 		}
 	}

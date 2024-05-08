@@ -1,9 +1,11 @@
 package com.christianbutnot.moremetals.init;
 
 import com.christianbutnot.moremetals.Main;
-import com.christianbutnot.moremetals.common.items.EngulfedCoalItem;
 import com.christianbutnot.moremetals.common.items.ResourceItem;
-import com.christianbutnot.moremetals.common.items.SulfurItem;
+import com.christianbutnot.moremetals.common.items.cookables.EngulfedCoalItem;
+import com.christianbutnot.moremetals.common.items.cookables.EnigmaticCoalItem;
+import com.christianbutnot.moremetals.common.items.cookables.ImmortalCoalItem;
+import com.christianbutnot.moremetals.common.items.cookables.SulfurItem;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -64,6 +66,8 @@ public class ItemInit {
 			() -> new ResourceItem(new Item.Properties()));
 	public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
 			() -> new ResourceItem(new Item.Properties()));
+	public static final DeferredItem<Item> GOLD_DUST = ITEMS.register("gold_dust",
+			() -> new ResourceItem(new Item.Properties()));
 	//NON-ALLOY METALS
 	public static final DeferredItem<Item> TIN_DUST = ITEMS.register("tin_dust",
 			() -> new ResourceItem(new Item.Properties()));
@@ -93,9 +97,9 @@ public class ItemInit {
 	public static final DeferredItem<Item> ENGULFED_COAL = ITEMS.register("engulfed_coal",
 			() -> new EngulfedCoalItem(new Item.Properties(), 2400));
 	public static final DeferredItem<Item> ENIGMATIC_COAL = ITEMS.register("enigmatic_coal",
-			() -> new EngulfedCoalItem(new Item.Properties(), 110000));
+			() -> new EnigmaticCoalItem(new Item.Properties(), 19200));
 	public static final DeferredItem<Item> IMMORTAL_COAL = ITEMS.register("immortal_coal",
-			() -> new EngulfedCoalItem(new Item.Properties(), 550000));
+			() -> new ImmortalCoalItem(new Item.Properties(), 38400));
 
 
 	public static void register(IEventBus eventBus) {
