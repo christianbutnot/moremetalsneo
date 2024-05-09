@@ -3,8 +3,8 @@ package com.christianbutnot.moremetals.common.items.tools;
 import java.util.function.Supplier;
 
 import com.christianbutnot.moremetals.init.ItemInit;
-import com.christianbutnot.moremetals.utils.CustomTags;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
@@ -13,11 +13,11 @@ import net.minecraft.world.level.block.Block;
 
 public enum CustomTiersEnum implements Tier {
 	
-	ALUMINUM(CustomTags.Blocks.NEEDS_ALUMINUM_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.ALUMINUM_INGOT)),
-	TIN(CustomTags.Blocks.NEEDS_TIN_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.TIN_INGOT)),
-	SILVER(CustomTags.Blocks.NEEDS_SILVER_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.SILVER_INGOT)),
-	COPPER(CustomTags.Blocks.NEEDS_COPPER_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.COPPER_INGOT)),
-	NICKEL(CustomTags.Blocks.NEEDS_NICKEL_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.NICKEL_INGOT));
+	ALUMINUM(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.ALUMINUM_INGOT)),
+	TIN(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.TIN_INGOT)),
+	SILVER(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.SILVER_INGOT)),
+	COPPER(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.COPPER_INGOT)),
+	NICKEL(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6.0F, 2.0F, 14, () -> Ingredient.of(ItemInit.NICKEL_INGOT));
 	
     private final TagKey<Block> incorrect;
     private final int uses;

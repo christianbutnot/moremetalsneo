@@ -1,0 +1,28 @@
+{
+  "values": [
+    "moremetals:copper_helmet",
+    "moremetals:copper_chestplate",
+    "moremetals:copper_leggings",
+    "moremetals:copper_boots",
+    
+    "moremetals:tin_helmet",
+    "moremetals:tin_chestplate",
+    "moremetals:tin_leggings",
+    "moremetals:tin_boots",
+    
+    "moremetals:aluminum_helmet",
+    "moremetals:aluminum_chestplate",
+    "moremetals:aluminum_leggings",
+    "moremetals:aluminum_boots",
+    
+    "moremetals:silver_helmet",
+    "moremetals:silver_chestplate",
+    "moremetals:silver_leggings",
+    "moremetals:silver_boots",
+    
+    "moremetals:nickel_helmet",
+    "moremetals:nickel_chestplate",
+    "moremetals:nickel_leggings",
+    "moremetals:nickel_boots"
+  ]
+}
