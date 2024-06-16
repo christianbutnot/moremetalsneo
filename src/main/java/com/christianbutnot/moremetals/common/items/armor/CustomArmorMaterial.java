@@ -4,6 +4,7 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
+import com.christianbutnot.moremetals.Main;
 import com.christianbutnot.moremetals.init.ItemInit;
 
 import net.minecraft.core.Holder;
@@ -22,27 +23,27 @@ public class CustomArmorMaterial {
 	public static final Holder<ArmorMaterial> COPPER, TIN, ALUMINUM, NICKEL, SILVER;
 
     static {
-        COPPER = register("moremetals:copper", createMap(new int[]{2, 5, 3, 1}),
+        COPPER = register("copper", createMap(new int[]{2, 5, 3, 1}),
                 14, SoundEvents.ARMOR_EQUIP_NETHERITE, 0f, 0f, () -> Ingredient.of(Items.COPPER_INGOT));
     }
     
     static {
-        TIN = register("moremetals:tin", createMap(new int[]{2, 5, 3, 2}),
+        TIN = register("tin", createMap(new int[]{2, 5, 3, 2}),
                 16, SoundEvents.ARMOR_EQUIP_NETHERITE, 0f, 0.1f, () -> Ingredient.of(ItemInit.TIN_INGOT));
     }
     
     static {
-        ALUMINUM = register("moremetals:aluminum", createMap(new int[]{2, 5, 3, 2}),
+        ALUMINUM = register("aluminum", createMap(new int[]{2, 5, 3, 2}),
                 8, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.TIN_INGOT));
     }
     
     static {
-        NICKEL = register("moremetals:nickel", createMap(new int[]{2, 6, 5, 2}),
+        NICKEL = register("nickel", createMap(new int[]{2, 6, 5, 2}),
                 20, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0.1f, () -> Ingredient.of(ItemInit.TIN_INGOT));
     }
     
     static {
-        SILVER = register("moremetals:silver", createMap(new int[]{2, 6, 5, 2}),
+        SILVER = register("silver", createMap(new int[]{2, 6, 5, 2}),
                 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0.1f, () -> Ingredient.of(ItemInit.TIN_INGOT));
     }
 
@@ -52,7 +53,10 @@ public class CustomArmorMaterial {
         return enumMap;
     }
 
-    private static Holder<ArmorMaterial> register(String string, EnumMap<Type, Integer> defense, int i, Holder<SoundEvent> holder, float f, float g, Supplier<Ingredient> supplier) {
-        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, new ResourceLocation(string), new ArmorMaterial(defense, i, holder, supplier, List.of(new ArmorMaterial.Layer(new ResourceLocation(string))), f, g));
+    private static Holder<ArmorMaterial> register(String name, EnumMap<Type, Integer> defense, int i, Holder<SoundEvent> holder, float f, float g, Supplier<Ingredient> supplier) {
+    	ResourceLocation location = ResourceLocation.fromNamespaceAndPath(Main.MODID, name);
+    	List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
+    	
+        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location, new ArmorMaterial(defense, i, holder, supplier, layers, f, g));
     }
 }
