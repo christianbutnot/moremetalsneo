@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "minecraft:gold_ingot"
+    "item": "moremetals:raw_zinc"
   },
   "result": {
-    "id": "moremetals:gold_dust"
+    "id": "moremetals:zinc_ingot"
   },
   "experience": 0.6,
   "cookingtime": 200

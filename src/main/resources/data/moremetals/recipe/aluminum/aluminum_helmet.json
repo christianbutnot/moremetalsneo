@@ -2,12 +2,15 @@
 "type": "minecraft:crafting_shaped",
 	"pattern": [
 		"AAA",
-		"A A",
+		"ACA",
 		"   "
 	],
 	"key": {
 		"A": {
 			"item": "moremetals:aluminum_ingot"
+		},
+		"C": {
+			"item": "minecraft:golden_helmet"
 		}
 	},
 	"result": {

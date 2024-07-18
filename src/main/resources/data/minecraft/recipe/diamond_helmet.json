@@ -1,0 +1,19 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"AAA",
+		"ACA"
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:diamond"
+		},
+		"C": {
+			"item": "moremetals:steel_helmet"
+		}
+	},
+	"result": {
+		"id": "minecraft:diamond_helmet",
+		"count": 1
+	}
+}

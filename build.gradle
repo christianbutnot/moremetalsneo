@@ -78,9 +78,7 @@ repositories {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     
-    //runtimeOnly "curse.maven:REI-310111:5301358"
-    //runtimeOnly "curse.maven:architect-419699:5383746"
-    //runtimeOnly "curse.maven:cloth-348521:5287791"
+    runtimeOnly "curse.maven:JEI-238222:5447427"
 }
 
 tasks.withType(ProcessResources).configureEach {

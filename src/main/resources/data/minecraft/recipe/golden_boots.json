@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"ACA",
+		"A A"
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:gold_ingot"
+		},
+		"C": {
+			"item": "minecraft:leather_boots"
+		}
+	},
+	"result": {
+		"id": "minecraft:golden_boots",
+		"count": 1
+	}
+}

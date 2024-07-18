@@ -1,4 +1,11 @@
 {
+    "item.moremetals.raw_tin": "Raw Tin",
+    "item.moremetals.raw_aluminum": "Raw Aluminum",
+    "item.moremetals.raw_nickel": "Raw Nickel",
+    "item.moremetals.raw_silver": "Raw Silver",
+    "item.moremetals.raw_lead": "Raw Lead",
+    "item.moremetals.raw_zinc": "Raw Zinc",
+    
 	"item.moremetals.silver_ingot": "Silver Ingot",
 	"item.moremetals.aluminum_ingot": "Aluminum Ingot",
 	"item.moremetals.nickel_ingot": "Nickel Ingot",
@@ -9,6 +16,7 @@
 	"item.moremetals.zinc_ingot": "Zinc Ingot",
 	"item.moremetals.electrum_ingot": "Electrum Ingot",
 	
+	"item.moremetals.copper_nugget": "Copper Nugget",
 	"item.moremetals.silver_nugget": "Silver Nugget",
 	"item.moremetals.aluminum_nugget": "Aluminum Nugget",
 	"item.moremetals.nickel_nugget": "Nickel Nugget",
@@ -31,6 +39,7 @@
 	"item.moremetals.bronze_dust": "Bronze Dust",
 	"item.moremetals.zinc_dust": "Zinc Dust",
 	"item.moremetals.lead_dust": "Lead Dust",
+	"item.moremetals.electrum_dust": "Electrum Dust",
 	"item.moremetals.sulfur_powder": "Sulfur Powder",
 	
 	"item.moremetals.engulfed_coal": "Engulfed Coal",
@@ -58,6 +67,18 @@
 	"item.moremetals.copper_chestplate": "Copper Chestplate",
 	"item.moremetals.copper_leggings": "Copper Leggings",
 	"item.moremetals.copper_boots": "Copper Boots",
+	
+	"item.moremetals.bronze_sword": "Bronze Sword",
+	"item.moremetals.bronze_pickaxe": "Bronze Pickaxe",
+	"item.moremetals.bronze_axe": "Bronze Axe",
+	"item.moremetals.bronze_shovel": "Bronze Shovel",
+	"item.moremetals.bronze_hoe": "Bronze Hoe",
+	"item.moremetals.bronze_shears": "Bronze Shears",
+	
+	"item.moremetals.bronze_helmet": "Bronze Helmet",
+	"item.moremetals.bronze_chestplate": "Bronze Chestplate",
+	"item.moremetals.bronze_leggings": "Bronze Leggings",
+	"item.moremetals.bronze_boots": "Bronze Boots",
 	
 	"item.moremetals.tin_sword": "Tin Sword",
 	"item.moremetals.tin_pickaxe": "Tin Pickaxe",
@@ -107,6 +128,54 @@
 	"item.moremetals.silver_leggings": "Silver Leggings",
 	"item.moremetals.silver_boots": "Silver Boots",
 	
+	"item.moremetals.zinc_sword": "Zinc Sword",
+	"item.moremetals.zinc_pickaxe": "Zinc Pickaxe",
+	"item.moremetals.zinc_axe": "Zinc Axe",
+	"item.moremetals.zinc_shovel": "Zinc Shovel",
+	"item.moremetals.zinc_hoe": "Zinc Hoe",
+	"item.moremetals.zinc_shears": "Zinc Shears",
+	
+	"item.moremetals.zinc_helmet": "Zinc Helmet",
+	"item.moremetals.zinc_chestplate": "Zinc Chestplate",
+	"item.moremetals.zinc_leggings": "Zinc Leggings",
+	"item.moremetals.zinc_boots": "Zinc Boots",
+	
+	"item.moremetals.steel_sword": "Steel Sword",
+	"item.moremetals.steel_pickaxe": "Steel Pickaxe",
+	"item.moremetals.steel_axe": "Steel Axe",
+	"item.moremetals.steel_shovel": "Steel Shovel",
+	"item.moremetals.steel_hoe": "Steel Hoe",
+	"item.moremetals.steel_shears": "Steel Shears",
+	
+	"item.moremetals.steel_helmet": "Steel Helmet",
+	"item.moremetals.steel_chestplate": "Steel Chestplate",
+	"item.moremetals.steel_leggings": "Steel Leggings",
+	"item.moremetals.steel_boots": "Steel Boots",
+	
+	"item.moremetals.lead_sword": "Lead Sword",
+	"item.moremetals.lead_pickaxe": "Lead Pickaxe",
+	"item.moremetals.lead_axe": "Lead Axe",
+	"item.moremetals.lead_shovel": "Lead Shovel",
+	"item.moremetals.lead_hoe": "Lead Hoe",
+	"item.moremetals.lead_shears": "Lead Shears",
+	
+	"item.moremetals.lead_helmet": "Lead Helmet",
+	"item.moremetals.lead_chestplate": "Lead Chestplate",
+	"item.moremetals.lead_leggings": "Lead Leggings",
+	"item.moremetals.lead_boots": "Lead Boots",
+	
+	"item.moremetals.electrum_sword": "Electrum Sword",
+	"item.moremetals.electrum_pickaxe": "Electrum Pickaxe",
+	"item.moremetals.electrum_axe": "Electrum Axe",
+	"item.moremetals.electrum_shovel": "Electrum Shovel",
+	"item.moremetals.electrum_hoe": "Electrum Hoe",
+	"item.moremetals.electrum_shears": "Electrum Shears",
+	
+	"item.moremetals.electrum_helmet": "Electrum Helmet",
+	"item.moremetals.electrum_chestplate": "Electrum Chestplate",
+	"item.moremetals.electrum_leggings": "Electrum Leggings",
+	"item.moremetals.electrum_boots": "Electrum Boots",
+	
 	"item.moremetals.rose_gold_shears": "Rose Gold Shears",
 	"item.moremetals.steel_shears": "Steel Shears",
 	"item.moremetals.bronze_shears": "Bronze Shears",
@@ -115,6 +184,21 @@
 	"item.moremetals.diamond_shears": "Diamond Shears",
 	"item.moremetals.emerald_shears": "Emerald Shears",
 	"item.moremetals.netherite_shears": "Netherite Shears",
+	
+	"item.moremetals.aluminum_hammer": "Aluminum Hammer",
+	"item.moremetals.copper_hammer": "Copper Hammer",
+	"item.moremetals.tin_hammer": "Tin Hammer",
+	"item.moremetals.bronze_hammer": "Bronze Hammer",
+	"item.moremetals.nickel_hammer": "Nickel Hammer",
+	"item.moremetals.silver_hammer": "Silver Hammer",
+	"item.moremetals.lead_hammer": "Lead Hammer",
+	"item.moremetals.zinc_hammer": "Zinc Hammer",
+	"item.moremetals.electrum_hammer": "Electrum Hammer",
+	"item.moremetals.steel_hammer": "Steel Hammer",
+	"item.moremetals.iron_hammer": "Iron Hammer",
+	"item.moremetals.diamond_hammer": "Diamond Hammer",
+	"item.moremetals.emerald_hammer": "Emerald Hammer",
+	"item.moremetals.netherite_hammer": "Netherite Hammer",
 	
 	"creativetab.moremetals_tab": "More Metals"
 }

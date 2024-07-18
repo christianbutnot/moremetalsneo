@@ -9,11 +9,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class CustomTags {
-	public static final TagKey<Block> NEEDS_ALUMINUM_TOOL = modBlockTag("needs_aluminum_tool");
-	public static final TagKey<Block> NEEDS_COPPER_TOOL = modBlockTag("copper_tool");
-	public static final TagKey<Block> NEEDS_TIN_TOOL = modBlockTag("needs_tin_tool");
-	public static final TagKey<Block> NEEDS_SILVER_TOOL = modBlockTag("needs_silver_tool");
-	public static final TagKey<Block> NEEDS_NICKEL_TOOL = modBlockTag("needs_nickel_tool");
 
 	public static final TagKey<Block> ALUMINUMORE = modBlockTag("aluminum");
 	public static final TagKey<Block> NICKELORE = modBlockTag("nickel");
@@ -35,6 +30,9 @@ public class CustomTags {
 	public static final TagKey<Item> TININGOT = modIngotTag("tin");
 	public static final TagKey<Item> LEADINGOT = modIngotTag("lead");
 	public static final TagKey<Item> ZINCINGOT = modIngotTag("zinc");
+	public static final TagKey<Item> BRONZEINGOT = modIngotTag("bronze");
+	public static final TagKey<Item> ELECTRUMINGOT = modIngotTag("electrum");
+	public static final TagKey<Item> STEELINGOT = modIngotTag("steel");
 
 	public static final TagKey<Item> ALUMINUMDUST = modDustTag("aluminum");
 	public static final TagKey<Item> NICKELDUST = modDustTag("nickel");
@@ -42,6 +40,9 @@ public class CustomTags {
 	public static final TagKey<Item> TINDUST = modDustTag("tin");
 	public static final TagKey<Item> LEADDUST = modDustTag("lead");
 	public static final TagKey<Item> ZINCDUST = modDustTag("zinc");
+	public static final TagKey<Item> BRONZEDUST = modDustTag("bronze");
+	public static final TagKey<Item> ELECTRUMDUST = modDustTag("electrum");
+	public static final TagKey<Item> STEELDUST = modDustTag("steel");
 
 	public static final TagKey<Item> ALUMINUMNUGGET = modNuggetTag("aluminum");
 	public static final TagKey<Item> NICKELNUGGET = modNuggetTag("nickel");
@@ -49,7 +50,12 @@ public class CustomTags {
 	public static final TagKey<Item> TINNUGGET = modNuggetTag("tin");
 	public static final TagKey<Item> LEADNUGGET = modNuggetTag("lead");
 	public static final TagKey<Item> ZINCNUGGET = modNuggetTag("zinc");
+	public static final TagKey<Item> BRONZENUGGET = modNuggetTag("bronze");
+	public static final TagKey<Item> ELECTRUMNUGGET = modNuggetTag("electrum");
+	public static final TagKey<Item> STEELNUGGET = modNuggetTag("steel");
 
+	public static final TagKey<Item> HAMMERS = modItemTag("hammers");
+	
 	public static TagKey<Block> blockTag(ResourceLocation tagLocaction) {
 		return TagKey.create(Registries.BLOCK, tagLocaction);
 	}
@@ -71,6 +77,10 @@ public class CustomTags {
 	}
 	
 	public static TagKey<Item> modIngotTag(String tagLocaction) {
+		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/ingots/", tagLocaction));
+	}
+	
+	public static TagKey<Item> modItemTag(String tagLocaction) {
 		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/ingots/", tagLocaction));
 	}
 

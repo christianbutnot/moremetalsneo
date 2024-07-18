@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moremetals:raw_aluminum"
+  },
+  "result": {
+    "id": "moremetals:aluminum_ingot"
+  },
+  "experience": 0.6,
+  "cookingtime": 200
+}

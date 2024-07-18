@@ -30,7 +30,7 @@ public class EnigmaticCoalItem extends Item {
 	    super.appendHoverText(stack, worldIn, tooltip, flagIn);
 
 	    tooltip.add(Component.literal("Resource Item").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
-	    tooltip.add(Component.literal("Cooks 96 Items").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+	    tooltip.add(Component.literal("Cooks 72 Items").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
 	}
 
 }

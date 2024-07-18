@@ -20,7 +20,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public class CustomArmorMaterial {
 
-	public static final Holder<ArmorMaterial> COPPER, TIN, ALUMINUM, NICKEL, SILVER;
+	public static final Holder<ArmorMaterial> COPPER, TIN, BRONZE, ALUMINUM, NICKEL, SILVER, LEAD, ZINC, STEEL, ELECTRUM;
 
     static {
         COPPER = register("copper", createMap(new int[]{2, 5, 3, 1}),
@@ -29,22 +29,43 @@ public class CustomArmorMaterial {
     
     static {
         TIN = register("tin", createMap(new int[]{2, 5, 3, 2}),
-                16, SoundEvents.ARMOR_EQUIP_NETHERITE, 0f, 0.1f, () -> Ingredient.of(ItemInit.TIN_INGOT));
+                16, SoundEvents.ARMOR_EQUIP_NETHERITE, 0f, 0f, () -> Ingredient.of(ItemInit.TIN_INGOT));
+    }
+    
+    static {
+        BRONZE = register("bronze", createMap(new int[]{2, 5, 3, 2}),
+                16, SoundEvents.ARMOR_EQUIP_NETHERITE, 0f, 0f, () -> Ingredient.of(ItemInit.BRONZE_INGOT));
     }
     
     static {
         ALUMINUM = register("aluminum", createMap(new int[]{2, 5, 3, 2}),
-                8, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.TIN_INGOT));
+                8, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.ALUMINUM_INGOT));
     }
     
     static {
         NICKEL = register("nickel", createMap(new int[]{2, 6, 5, 2}),
-                20, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0.1f, () -> Ingredient.of(ItemInit.TIN_INGOT));
+                20, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.NICKEL_INGOT));
     }
     
     static {
         SILVER = register("silver", createMap(new int[]{2, 6, 5, 2}),
-                25, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0.1f, () -> Ingredient.of(ItemInit.TIN_INGOT));
+                25, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.SILVER_INGOT));
+    }
+    static {
+        LEAD = register("lead", createMap(new int[]{3, 6, 5, 2}),
+                12, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.LEAD_INGOT));
+    }
+    static {
+        ZINC = register("zinc", createMap(new int[]{2, 6, 5, 2}),
+                12, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.ZINC_INGOT));
+    }
+    static {
+        ELECTRUM = register("electrum", createMap(new int[]{2, 7, 5, 2}),
+                25, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.ELECTRUM_INGOT));
+    }
+    static {
+        STEEL = register("steel", createMap(new int[]{3, 7, 5, 3}),
+                12, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.5f, 0f, () -> Ingredient.of(ItemInit.STEEL_INGOT));
     }
 
     private static EnumMap<Type, Integer> createMap(int[] values) {
