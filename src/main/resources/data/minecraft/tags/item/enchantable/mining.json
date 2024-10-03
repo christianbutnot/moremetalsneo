@@ -1,0 +1,24 @@
+{
+  "values": [
+    "moremetals:copper_pickaxe",
+    "moremetals:copper_axe",
+    "moremetals:copper_shovel",
+    "moremetals:copper_hoe",
+    "moremetals:tin_pickaxe",
+    "moremetals:tin_axe",
+    "moremetals:tin_shovel",
+    "moremetals:tin_hoe",
+    "moremetals:aluminum_pickaxe",
+    "moremetals:aluminum_axe",
+    "moremetals:aluminum_shovel",
+    "moremetals:aluminum_hoe",
+    "moremetals:silver_pickaxe",
+    "moremetals:silver_axe",
+    "moremetals:silver_shovel",
+    "moremetals:silver_hoe",
+    "moremetals:nickel_pickaxe",
+    "moremetals:nickel_axe",
+    "moremetals:nickel_shovel",
+    "moremetals:nickel_hoe"
+  ]
+}

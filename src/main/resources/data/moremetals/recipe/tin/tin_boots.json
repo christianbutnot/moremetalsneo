@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"ACA",
+		"A A"
+	],
+	"key": {
+		"A": {
+			"item": "moremetals:tin_ingot"
+		},
+		"C": {
+			"item": "moremetals:copper_boots"
+		}
+	},
+	"result": {
+		"id": "moremetals:tin_boots",
+		"count": 1
+	}
+}

@@ -1,0 +1,18 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"IC"
+	],
+	"key": {
+		"I": {
+			"item": "moremetals:iron_dust"
+		},
+		"C": {
+			"item": "moremetals:coal_dust"
+			}
+	},
+	"result": {
+		"id": "moremetals:steel_dust",
+		"count": 1
+	}
+}

@@ -1,0 +1,15 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"S"
+	],
+	"key": {
+		"S": {
+			"item": "moremetals:nickel_ingot"
+		}
+	},
+	"result": {
+		"id": "moremetals:nickel_nugget",
+		"count": 9
+	}
+}

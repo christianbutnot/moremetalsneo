@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" F ",
+		"FBF",
+		" F "
+	],
+	"key": {
+		"F": {
+			"item": "moremetals:engulfed_coal"
+		},
+		"B": {
+			"item": "minecraft:redstone_block"
+		}
+	},
+	"result": {
+		"id": "moremetals:enigmatic_coal",
+		"count": 1
+	}
+}

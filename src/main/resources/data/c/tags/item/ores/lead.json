@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+  	"moremetals:lead_ore",
+  	"moremetals:raw_lead"
+  	]
+}

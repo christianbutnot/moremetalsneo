@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moremetals:coal_dust"
+  },
+  "result": {
+    "id": "minecraft:coal"
+  },
+  "experience": 0.6,
+  "cookingtime": 200
+}

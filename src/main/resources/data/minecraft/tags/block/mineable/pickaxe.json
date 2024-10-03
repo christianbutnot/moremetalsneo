@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "moremetals:tin_ore",
+    "moremetals:aluminum_ore",
+    "moremetals:nickel_ore",
+    "moremetals:silver_ore",
+    "moremetals:lead_ore",
+    "moremetals:zinc_ore",
+    "moremetals:engulfed_coal_ore",
+    "moremetals:sulfur_ore"
+  ]
+}

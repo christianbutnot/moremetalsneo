@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"AAA",
+		"ACA",
+		"   "
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:copper_ingot"
+		},
+		"C": {
+			"item": "moremetals:aluminum_helmet"
+		}
+	},
+	"result": {
+		"id": "moremetals:copper_helmet",
+		"count": 1
+	}
+}

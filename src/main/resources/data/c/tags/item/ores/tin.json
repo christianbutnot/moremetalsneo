@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+  	"moremetals:tin_ore",
+  	"moremetals:raw_tin"
+  	]
+}

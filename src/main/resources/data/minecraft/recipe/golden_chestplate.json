@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ACA",
+		"AAA",
+		"AAA"
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:gold_ingot"
+		},
+		"C": {
+			"item": "minecraft:leather_chestplate"
+		}
+	},
+	"result": {
+		"id": "minecraft:golden_chestplate",
+		"count": 1
+	}
+}

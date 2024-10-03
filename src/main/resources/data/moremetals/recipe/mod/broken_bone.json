@@ -1,0 +1,18 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"IC"
+	],
+	"key": {
+		"I": {
+			"item": "minecraft:bone"
+		},
+		"C": {
+			"tag": "moremetals:hammers"
+		}
+	},
+	"result": {
+		"id": "progressionutils:broken_bone",
+		"count": 1
+	}
+}

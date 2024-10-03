@@ -1,0 +1,16 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"I  ",
+		" I "
+	],
+	"key": {
+		"I": {
+			"item": "minecraft:emerald"
+		}
+	},
+	"result": {
+		"id": "moremetals:emerald_shears",
+		"count": 1
+	}
+}

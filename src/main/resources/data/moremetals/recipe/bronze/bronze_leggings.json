@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"AAA",
+		"ACA",
+		"A A"
+	],
+	"key": {
+		"A": {
+			"item": "moremetals:bronze_ingot"
+		},
+		"C": {
+			"item": "moremetals:tin_leggings"
+		}
+	},
+	"result": {
+		"id": "moremetals:bronze_leggings",
+		"count": 1
+	}
+}

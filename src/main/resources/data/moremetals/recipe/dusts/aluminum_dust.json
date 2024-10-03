@@ -1,0 +1,18 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"IC"
+	],
+	"key": {
+		"I": {
+			"item": "moremetals:aluminum_ingot"
+		},
+		"C": {
+			"tag": "moremetals:hammers"
+		}
+	},
+	"result": {
+		"id": "moremetals:aluminum_dust",
+		"count": 1
+	}
+}

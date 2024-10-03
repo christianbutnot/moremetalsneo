@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "moremetals:copper_hammer",
+    "moremetals:tin_hammer",
+    "moremetals:aluminum_hammer",
+    "moremetals:bronze_hammer",
+    "moremetals:nickel_hammer",
+    "moremetals:silver_hammer",
+    "moremetals:lead_hammer",
+    "moremetals:electrum_hammer",
+    "moremetals:iron_hammer",
+    "moremetals:diamond_hammer",
+    "moremetals:emerald_hammer",
+    "moremetals:netherite_hammer",
+    "moremetals:steel_hammer",
+    "moremetals:zinc_hammer"
+  ]
+}

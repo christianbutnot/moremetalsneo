@@ -1,0 +1,16 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"I  ",
+		" I "
+	],
+	"key": {
+		"I": {
+			"item": "moremetals:nickel_ingot"
+		}
+	},
+	"result": {
+		"id": "moremetals:nickel_shears",
+		"count": 1
+	}
+}

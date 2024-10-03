@@ -1,0 +1,19 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CC ",
+		"T  "
+	],
+	"key": {
+		"C": {
+			"item": "moremetals:silver_dust"
+		},
+		"T": {
+			"item": "moremetals:gold_dust"
+			}
+	},
+	"result": {
+		"id": "moremetals:electrum_dust",
+		"count": 1
+	}
+}

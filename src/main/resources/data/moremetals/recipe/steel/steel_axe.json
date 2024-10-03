@@ -1,0 +1,20 @@
+{
+"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" AA",
+		" SA",
+		" S "
+	],
+	"key": {
+		"A": {
+			"item": "moremetals:steel_ingot"
+		},
+		"S": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"id": "moremetals:steel_axe",
+		"count": 1
+	}
+}
