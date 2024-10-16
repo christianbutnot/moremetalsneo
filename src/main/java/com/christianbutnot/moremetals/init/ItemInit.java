@@ -1,8 +1,8 @@
 package com.christianbutnot.moremetals.init;
 
+import com.christianbutnot.justanotherlibrarymod.common.item.ItemTypes.ResourceItem;
+import com.christianbutnot.justanotherlibrarymod.common.item.crafting.HammerItem;
 import com.christianbutnot.moremetals.Main;
-import com.christianbutnot.moremetals.common.items.HammerItem;
-import com.christianbutnot.moremetals.common.items.ResourceItem;
 import com.christianbutnot.moremetals.common.items.cookables.EngulfedCoalItem;
 import com.christianbutnot.moremetals.common.items.cookables.EnigmaticCoalItem;
 import com.christianbutnot.moremetals.common.items.cookables.ImmortalCoalItem;
