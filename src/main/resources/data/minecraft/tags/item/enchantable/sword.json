@@ -9,6 +9,16 @@
     "moremetals:aluminum_axe",
     "moremetals:silver_axe",
     "moremetals:nickel_axe",
-    "moremetals:nickel_sword"
+    "moremetals:nickel_sword",
+	"moremetals:lead_sword",
+	"moremetals:lead_axe",
+	"moremetals:bronze_sword",
+	"moremetals:bronze_axe",
+	"moremetals:electrum_sword",
+	"moremetals:electrum_axe",
+	"moremetals:zinc_sword",
+	"moremetals:zinc_axe",
+	"moremetals:steel_sword",
+	"moremetals:steel_axe"
   ]
 }

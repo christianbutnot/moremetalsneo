@@ -1,9 +1,14 @@
 {
-  "values": [
-    "moremetals:copper_chestplate",
-    "moremetals:tin_chestplate",
-    "moremetals:aluminum_chestplate",
-    "moremetals:silver_chestplate",
-    "moremetals:nickel_chestplate"
-  ]
+	"values": [
+		"moremetals:copper_chestplate",
+		"moremetals:tin_chestplate",
+		"moremetals:aluminum_chestplate",
+		"moremetals:silver_chestplate",
+		"moremetals:nickel_chestplate",
+		"moremetals:lead_chestplate",
+		"moremetals:bronze_chestplate",
+		"moremetals:electrum_chestplate",
+		"moremetals:zinc_chestplate",
+		"moremetals:steel_chestplate"
+	]
 }

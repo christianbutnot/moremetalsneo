@@ -1,9 +1,14 @@
 {
-  "values": [
-    "moremetals:copper_boots",
-    "moremetals:tin_boots",
-    "moremetals:aluminum_boots",
-    "moremetals:silver_boots",
-    "moremetals:nickel_boots"
-  ]
+	"values": [
+		"moremetals:copper_boots",
+		"moremetals:tin_boots",
+		"moremetals:aluminum_boots",
+		"moremetals:silver_boots",
+		"moremetals:nickel_boots",
+		"moremetals:lead_boots",
+		"moremetals:bronze_boots",
+		"moremetals:electrum_boots",
+		"moremetals:zinc_boots",
+		"moremetals:steel_boots"
+	]
 }

@@ -1,9 +1,14 @@
 {
-  "values": [
-    "moremetals:copper_helmet",
-    "moremetals:tin_helmet",
-    "moremetals:aluminum_helmet",
-    "moremetals:silver_helmet",
-    "moremetals:nickel_helmet"
-  ]
+	"values": [
+		"moremetals:copper_helmet",
+		"moremetals:tin_helmet",
+		"moremetals:aluminum_helmet",
+		"moremetals:silver_helmet",
+		"moremetals:nickel_helmet",
+		"moremetals:lead_helmet",
+		"moremetals:bronze_helmet",
+		"moremetals:electrum_helmet",
+		"moremetals:zinc_helmet",
+		"moremetals:steel_helmet"
+	]
 }

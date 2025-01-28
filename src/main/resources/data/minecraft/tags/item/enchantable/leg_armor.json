@@ -1,9 +1,14 @@
 {
-  "values": [
-    "moremetals:copper_leggings",
-    "moremetals:tin_leggings",
-    "moremetals:aluminum_leggings",
-    "moremetals:silver_leggings",
-    "moremetals:nickel_boots"
-  ]
+	"values": [
+		"moremetals:copper_leggings",
+		"moremetals:tin_leggings",
+		"moremetals:aluminum_leggings",
+		"moremetals:silver_leggings",
+		"moremetals:nickel_leggings",
+		"moremetals:lead_leggings",
+		"moremetals:bronze_leggings",
+		"moremetals:electrum_leggings",
+		"moremetals:zinc_leggings",
+		"moremetals:steel_leggings"
+	]
 }

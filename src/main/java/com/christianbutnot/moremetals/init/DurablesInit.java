@@ -66,13 +66,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.COPPER, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.COPPER, -1, -2.4f))));
 	// copper armor
 	public static final DeferredItem<Item> COPPER_HELMET = DURABLES.register("copper_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.HELMET,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> COPPER_CHESTPLATE = DURABLES.register("copper_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> COPPER_LEGGINGS = DURABLES.register("copper_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.LEGGINGS,  new Item.Properties().durability(225).stacksTo(1)));
 	public static final DeferredItem<Item> COPPER_BOOTS = DURABLES.register("copper_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.COPPER, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// tin tools
 	public static final DeferredItem<Item> TIN_SWORD = DURABLES.register("tin_sword",
@@ -87,13 +87,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.TIN, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.TIN, -1, -2.4f))));
 	// tin armor
 	public static final DeferredItem<Item> TIN_HELMET = DURABLES.register("tin_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.HELMET,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> TIN_CHESTPLATEPLATE = DURABLES.register("tin_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> TIN_LEGGINGS = DURABLES.register("tin_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.LEGGINGS,  new Item.Properties().durability(225).stacksTo(1)));
 	public static final DeferredItem<Item> TIN_BOOTS = DURABLES.register("tin_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.TIN, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// bronze tools
 	public static final DeferredItem<Item> BRONZE_SWORD = DURABLES.register("bronze_sword",
@@ -108,13 +108,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.BRONZE, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.BRONZE, -1, -2.4f))));
 	// bronze armor
 	public static final DeferredItem<Item> BRONZE_HELMET = DURABLES.register("bronze_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.HELMET,  new Item.Properties().durability(195).stacksTo(1)));
 	public static final DeferredItem<Item> BRONZE_CHESTPLATEPLATE = DURABLES.register("bronze_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> BRONZE_LEGGINGS = DURABLES.register("bronze_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.LEGGINGS,  new Item.Properties().durability(235).stacksTo(1)));
 	public static final DeferredItem<Item> BRONZE_BOOTS = DURABLES.register("bronze_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.BRONZE, Type.BOOTS,  new Item.Properties().durability(215).stacksTo(1)));
 
 	// aluminum tools
 	public static final DeferredItem<Item> ALUMINUM_SWORD = DURABLES.register("aluminum_sword",
@@ -129,13 +129,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.ALUMINUM, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.ALUMINUM, -1, -2.4f))));
 	// aluminum armor
 	public static final DeferredItem<Item> ALUMINUM_HELMET = DURABLES.register("aluminum_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.HELMET,  new Item.Properties().durability(135).stacksTo(1)));
 	public static final DeferredItem<Item> ALUMINUM_CHESTPLATEPLATE = DURABLES.register("aluminum_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.CHESTPLATE,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> ALUMINUM_LEGGINGS = DURABLES.register("aluminum_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.LEGGINGS,  new Item.Properties().durability(155).stacksTo(1)));
 	public static final DeferredItem<Item> ALUMINUM_BOOTS = DURABLES.register("aluminum_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ALUMINUM, Type.BOOTS,  new Item.Properties().durability(140).stacksTo(1)));
 
 	// nickel tools
 	public static final DeferredItem<Item> NICKEL_SWORD = DURABLES.register("nickel_sword",
@@ -150,13 +150,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.NICKEL, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.NICKEL, -1, -2.4f))));
 	// nickel armor
 	public static final DeferredItem<Item> NICKEL_HELMET = DURABLES.register("nickel_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.HELMET,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> NICKEL_CHESTPLATEPLATE = DURABLES.register("nickel_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> NICKEL_LEGGINGS = DURABLES.register("nickel_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.LEGGINGS,  new Item.Properties().durability(225).stacksTo(1)));
 	public static final DeferredItem<Item> NICKEL_BOOTS = DURABLES.register("nickel_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.NICKEL, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// silver tools
 	public static final DeferredItem<Item> SILVER_SWORD = DURABLES.register("silver_sword",
@@ -171,13 +171,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.SILVER, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.SILVER, -1, -2.4f))));
 	// silver armor
 	public static final DeferredItem<Item> SILVER_HELMET = DURABLES.register("silver_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.HELMET,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> SILVER_CHESTPLATEPLATE = DURABLES.register("silver_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> SILVER_LEGGINGS = DURABLES.register("silver_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.LEGGINGS,  new Item.Properties().durability(225).stacksTo(1)));
 	public static final DeferredItem<Item> SILVER_BOOTS = DURABLES.register("silver_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.SILVER, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// lead tools
 	public static final DeferredItem<Item> LEAD_SWORD = DURABLES.register("lead_sword",
@@ -192,13 +192,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.LEAD, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.LEAD, -1, -2.4f))));
 	// lead armor
 	public static final DeferredItem<Item> LEAD_HELMET = DURABLES.register("lead_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.HELMET,  new Item.Properties().durability(175).stacksTo(1)));
 	public static final DeferredItem<Item> LEAD_CHESTPLATEPLATE = DURABLES.register("lead_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> LEAD_LEGGINGS = DURABLES.register("lead_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.LEGGINGS,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> LEAD_BOOTS = DURABLES.register("lead_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.LEAD, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// electrum tools
 	public static final DeferredItem<Item> ELECTRUM_SWORD = DURABLES.register("electrum_sword",
@@ -213,13 +213,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.ELECTRUM, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.ELECTRUM, -1, -2.4f))));
 	// electrum armor
 	public static final DeferredItem<Item> ELECTRUM_HELMET = DURABLES.register("electrum_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.HELMET,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> ELECTRUM_CHESTPLATEPLATE = DURABLES.register("electrum_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> ELECTRUM_LEGGINGS = DURABLES.register("electrum_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.LEGGINGS,  new Item.Properties().durability(225).stacksTo(1)));
 	public static final DeferredItem<Item> ELECTRUM_BOOTS = DURABLES.register("electrum_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ELECTRUM, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// zinc tools
 	public static final DeferredItem<Item> ZINC_SWORD = DURABLES.register("zinc_sword",
@@ -234,13 +234,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.ZINC, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.ZINC, -1, -2.4f))));
 	// zinc armor
 	public static final DeferredItem<Item> ZINC_HELMET = DURABLES.register("zinc_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.HELMET,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.HELMET,  new Item.Properties().durability(165).stacksTo(1)));
 	public static final DeferredItem<Item> ZINC_CHESTPLATEPLATE = DURABLES.register("zinc_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.CHESTPLATE,  new Item.Properties().durability(240).stacksTo(1)));
 	public static final DeferredItem<Item> ZINC_LEGGINGS = DURABLES.register("zinc_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.LEGGINGS,  new Item.Properties().durability(225).stacksTo(1)));
 	public static final DeferredItem<Item> ZINC_BOOTS = DURABLES.register("zinc_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.ZINC, Type.BOOTS,  new Item.Properties().durability(195).stacksTo(1)));
 
 	// steel tools
 	public static final DeferredItem<Item> STEEL_SWORD = DURABLES.register("steel_sword",
@@ -255,13 +255,13 @@ public class DurablesInit {
 			() -> new HoeItem(CustomTiersEnum.STEEL, new Item.Properties().attributes(HoeItem.createAttributes(CustomTiersEnum.STEEL, -1, -2.4f))));
 	// steel armor
 	public static final DeferredItem<Item> STEEL_HELMET = DURABLES.register("steel_helmet",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.HELMET, new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.HELMET, new Item.Properties().durability(200).stacksTo(1)));
 	public static final DeferredItem<Item> STEEL_CHESTPLATEPLATE = DURABLES.register("steel_chestplate",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.CHESTPLATE,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.CHESTPLATE,  new Item.Properties().durability(300).stacksTo(1)));
 	public static final DeferredItem<Item> STEEL_LEGGINGS = DURABLES.register("steel_leggings",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.LEGGINGS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.LEGGINGS,  new Item.Properties().durability(255).stacksTo(1)));
 	public static final DeferredItem<Item> STEEL_BOOTS = DURABLES.register("steel_boots",
-			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.BOOTS,  new Item.Properties().stacksTo(1)));
+			() -> new ArmorItem(MoreMetalsArmorMaterials.STEEL, Type.BOOTS,  new Item.Properties().durability(215).stacksTo(1)));
 
 	public static void register(IEventBus eventBus) {
 		DURABLES.register(eventBus);
