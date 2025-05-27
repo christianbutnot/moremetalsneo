@@ -4,12 +4,8 @@
 		"IC"
 	],
 	"key": {
-		"I": {
-			"item": "moremetals:iron_dust"
-		},
-		"C": {
-			"item": "moremetals:coal_dust"
-			}
+		"I": "moremetals:iron_dust",
+		"C": "moremetals:coal_dust"
 	},
 	"result": {
 		"id": "moremetals:steel_dust",

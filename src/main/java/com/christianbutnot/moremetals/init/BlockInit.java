@@ -4,6 +4,9 @@ import java.util.function.Supplier;
 
 import com.christianbutnot.moremetals.Main;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -20,30 +23,38 @@ public class BlockInit {
     
     public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "tin_ore")))));
     public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "silver_ore")))));
     public static final DeferredBlock<Block> NICKEL_ORE = registerBlock("nickel_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "nickel_ore")))));
     public static final DeferredBlock<Block> ALUMINUM_ORE = registerBlock("aluminum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "aluminum_ore")))));
     
     public static final DeferredBlock<Block> LEAD_ORE = registerBlock("lead_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "lead_ore")))));
     public static final DeferredBlock<Block> ZINC_ORE = registerBlock("zinc_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "zinc_ore")))));
     public static final DeferredBlock<Block> ENGULFED_COAL_ORE = registerBlock("engulfed_coal_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "engulfed_coal_ore")))));
     
     public static final DeferredBlock<Block> SULFUR_ORE = registerBlock("sulfur_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+                    .strength(3f).requiresCorrectToolForDrops().setId(ResourceKey
+        					.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, "sulfur_ore")))));
     
     
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -53,7 +64,8 @@ public class BlockInit {
 	}
 
 	private static <T extends Block> DeferredItem<BlockItem> registerBlockItem(String name, DeferredBlock<T> block) {
-		return ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+		return ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(ResourceKey
+				.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, name)))));
 	}
 
 	public static void register(IEventBus eventBus) {

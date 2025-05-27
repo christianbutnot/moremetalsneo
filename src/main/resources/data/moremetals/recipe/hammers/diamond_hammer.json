@@ -6,12 +6,8 @@
 		"S  "
 	],
 	"key": {
-		"A": {
-			"item": "minecraft:diamond"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "minecraft:diamond",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:diamond_hammer",

@@ -6,12 +6,8 @@
 		" S "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:steel_ingot"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "moremetals:steel_ingot",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:steel_axe",

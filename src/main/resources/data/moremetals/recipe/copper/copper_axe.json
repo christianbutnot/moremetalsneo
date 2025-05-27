@@ -6,12 +6,8 @@
 		" S "
 	],
 	"key": {
-		"A": {
-			"item": "minecraft:copper_ingot"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "minecraft:copper_ingot",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:copper_axe",

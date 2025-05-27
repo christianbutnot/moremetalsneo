@@ -6,12 +6,8 @@
 		" F "
 	],
 	"key": {
-		"F": {
-			"item": "moremetals:enigmatic_coal"
-		},
-		"B": {
-			"item": "minecraft:emerald_block"
-		}
+		"F": "moremetals:enigmatic_coal",
+		"B": "minecraft:emerald_block"
 	},
 	"result": {
 		"id": "moremetals:immortal_coal",

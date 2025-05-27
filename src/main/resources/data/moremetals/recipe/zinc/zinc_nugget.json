@@ -4,9 +4,7 @@
 		"S"
 	],
 	"key": {
-		"S": {
-			"item": "moremetals:zinc_ingot"
-		}
+		"S": "moremetals:zinc_ingot"
 	},
 	"result": {
 		"id": "moremetals:zinc_nugget",

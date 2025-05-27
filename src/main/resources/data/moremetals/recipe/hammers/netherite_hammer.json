@@ -6,12 +6,8 @@
 		"S  "
 	],
 	"key": {
-		"A": {
-			"item": "minecraft:netherite_ingot"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "minecraft:netherite_ingot",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:netherite_hammer",

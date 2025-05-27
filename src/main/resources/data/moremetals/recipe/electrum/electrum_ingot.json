@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "moremetals:electrum_dust"
-  },
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:electrum_dust",
   "result": {
     "id": "moremetals:electrum_ingot"
-  },
-  "experience": 0.6,
-  "cookingtime": 200
+  }
 }

@@ -5,9 +5,7 @@
 		" I "
 	],
 	"key": {
-		"I": {
-			"item": "minecraft:diamond"
-		}
+		"I": "minecraft:diamond"
 	},
 	"result": {
 		"id": "moremetals:diamond_shears",

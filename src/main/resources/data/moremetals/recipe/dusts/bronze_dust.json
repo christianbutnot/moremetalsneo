@@ -5,12 +5,8 @@
 		"T  "
 	],
 	"key": {
-		"C": {
-			"item": "moremetals:copper_dust"
-		},
-		"T": {
-			"item": "moremetals:tin_dust"
-			}
+		"C": "moremetals:copper_dust",
+		"T": "moremetals:tin_dust"
 	},
 	"result": {
 		"id": "moremetals:bronze_dust",

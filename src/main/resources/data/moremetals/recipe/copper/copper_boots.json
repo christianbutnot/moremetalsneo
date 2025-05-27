@@ -6,12 +6,8 @@
 		"A A"
 	],
 	"key": {
-		"A": {
-			"item": "minecraft:copper_ingot"
-		},
-		"C": {
-			"item": "moremetals:aluminum_boots"
-		}
+		"A": "minecraft:copper_ingot",
+		"C": "moremetals:aluminum_boots"
 	},
 	"result": {
 		"id": "moremetals:copper_boots",

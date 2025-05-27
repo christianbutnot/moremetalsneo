@@ -6,12 +6,8 @@
 		"AAA"
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:lead_ingot"
-		},
-		"C": {
-			"item": "moremetals:silver_chestplate"
-		}
+		"A": "moremetals:lead_ingot",
+		"C": "moremetals:silver_chestplate"
 	},
 	"result": {
 		"id": "moremetals:lead_chestplate",

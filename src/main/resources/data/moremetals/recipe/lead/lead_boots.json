@@ -6,12 +6,8 @@
 		"A A"
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:lead_ingot"
-		},
-		"C": {
-			"item": "moremetals:silver_boots"
-		}
+		"A": "moremetals:lead_ingot",
+		"C": "moremetals:silver_boots"
 	},
 	"result": {
 		"id": "moremetals:lead_boots",

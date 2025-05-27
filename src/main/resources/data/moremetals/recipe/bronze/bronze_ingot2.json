@@ -6,9 +6,7 @@
 		"SSS"
 	],
 	"key": {
-		"S": {
-			"item": "moremetals:bronze_nugget"
-		}
+		"S": "moremetals:bronze_nugget"
 	},
 	"result": {
 		"id": "moremetals:bronze_ingot",

@@ -6,12 +6,8 @@
 		" S "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:aluminum_ingot"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "moremetals:aluminum_ingot",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:aluminum_pickaxe",

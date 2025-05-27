@@ -4,12 +4,8 @@
 		"IC"
 	],
 	"key": {
-		"I": {
-			"item": "moremetals:electrum_ingot"
-		},
-		"C": {
-			"tag": "moremetals:hammers"
-		}
+		"I": "moremetals:electrum_ingot",
+		"C": "#moremetals:hammers"
 	},
 	"result": {
 		"id": "moremetals:electrum_dust",

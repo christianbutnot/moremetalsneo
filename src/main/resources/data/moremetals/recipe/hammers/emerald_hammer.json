@@ -6,12 +6,8 @@
 		"S  "
 	],
 	"key": {
-		"A": {
-			"item": "minecraft:emerald"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "minecraft:emerald",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:emerald_hammer",

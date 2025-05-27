@@ -6,12 +6,8 @@
 		"   "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:zinc_ingot"
-		},
-		"C": {
-			"item": "moremetals:lead_helmet"
-		}
+		"A": "moremetals:zinc_ingot",
+		"C": "moremetals:lead_helmet"
 	},
 	"result": {
 		"id": "moremetals:zinc_helmet",

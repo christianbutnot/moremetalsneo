@@ -5,9 +5,7 @@
 		" I "
 	],
 	"key": {
-		"I": {
-			"item": "moremetals:lead_ingot"
-		}
+		"I": "moremetals:lead_ingot"
 	},
 	"result": {
 		"id": "moremetals:lead_shears",

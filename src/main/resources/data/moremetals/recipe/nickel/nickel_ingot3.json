@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "moremetals:nickel_dust"
-  },
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:nickel_dust",
   "result": {
     "id": "moremetals:nickel_ingot"
-  },
-  "experience": 0.6,
-  "cookingtime": 200
+  }
 }

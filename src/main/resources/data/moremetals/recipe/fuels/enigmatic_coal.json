@@ -6,12 +6,8 @@
 		" F "
 	],
 	"key": {
-		"F": {
-			"item": "moremetals:engulfed_coal"
-		},
-		"B": {
-			"item": "minecraft:redstone_block"
-		}
+		"F": "moremetals:engulfed_coal",
+		"B": "minecraft:redstone_block"
 	},
 	"result": {
 		"id": "moremetals:enigmatic_coal",

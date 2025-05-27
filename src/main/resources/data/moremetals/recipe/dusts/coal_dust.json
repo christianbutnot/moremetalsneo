@@ -4,12 +4,8 @@
 		"IC"
 	],
 	"key": {
-		"I": {
-			"item": "minecraft:coal"
-		},
-		"C": {
-			"tag": "moremetals:hammers"
-		}
+		"I": "minecraft:coal",
+		"C": "#moremetals:hammers"
 	},
 	"result": {
 		"id": "moremetals:coal_dust",

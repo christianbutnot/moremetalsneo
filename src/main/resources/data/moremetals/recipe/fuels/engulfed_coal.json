@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "moremetals:engulfed_coal_ore"
-  },
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:engulfed_coal_ore",
   "result": {
     "id": "moremetals:engulfed_coal"
-  },
-  "experience": 0.6,
-  "cookingtime": 200
+  }
 }

@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "moremetals:copper_dust"
-  },
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:copper_dust",
   "result": {
     "id": "minecraft:copper_ingot"
-  },
-  "experience": 0.6,
-  "cookingtime": 200
+  }
 }

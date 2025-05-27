@@ -4,9 +4,7 @@
 		"S"
 	],
 	"key": {
-		"S": {
-			"item": "moremetals:lead_ingot"
-		}
+		"S": "moremetals:lead_ingot"
 	},
 	"result": {
 		"id": "moremetals:lead_nugget",

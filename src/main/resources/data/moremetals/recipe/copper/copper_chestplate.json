@@ -6,12 +6,8 @@
 		"AAA"
 	],
 	"key": {
-		"A": {
-			"item": "minecraft:copper_ingot"
-		},
-		"C": {
-			"item": "moremetals:aluminum_chestplate"
-		}
+		"A": "minecraft:copper_ingot",
+		"C": "moremetals:aluminum_chestplate"
 	},
 	"result": {
 		"id": "moremetals:copper_chestplate",

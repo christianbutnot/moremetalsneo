@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "moremetals:copper"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "moremetals:copper"
+      }
+    ]
+  }
+}

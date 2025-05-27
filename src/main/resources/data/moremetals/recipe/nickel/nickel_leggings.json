@@ -6,12 +6,8 @@
 		"A A"
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:nickel_ingot"
-		},
-		"C": {
-			"item": "moremetals:bronze_leggings"
-		}
+		"A": "moremetals:nickel_ingot",
+		"C": "moremetals:bronze_leggings"
 	},
 	"result": {
 		"id": "moremetals:nickel_leggings",

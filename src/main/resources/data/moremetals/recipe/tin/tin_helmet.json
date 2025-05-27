@@ -6,12 +6,8 @@
 		"   "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:tin_ingot"
-		},
-		"C": {
-			"item": "moremetals:copper_helmet"
-		}
+		"A": "moremetals:tin_ingot",
+		"C": "moremetals:copper_helmet"
 	},
 	"result": {
 		"id": "moremetals:tin_helmet",

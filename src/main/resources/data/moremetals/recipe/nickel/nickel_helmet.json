@@ -6,12 +6,8 @@
 		"   "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:nickel_ingot"
-		},
-		"C": {
-			"item": "moremetals:bronze_helmet"
-		}
+		"A": "moremetals:nickel_ingot",
+		"C": "moremetals:bronze_helmet"
 	},
 	"result": {
 		"id": "moremetals:nickel_helmet",

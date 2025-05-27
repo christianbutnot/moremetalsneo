@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "moremetals:tin_ore"
-  },
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:tin_ore",
   "result": {
     "id": "moremetals:tin_ingot"
-  },
-  "experience": 0.6,
-  "cookingtime": 200
+  }
 }

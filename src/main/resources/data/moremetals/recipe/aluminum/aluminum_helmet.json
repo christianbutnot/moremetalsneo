@@ -6,12 +6,8 @@
 		"   "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:aluminum_ingot"
-		},
-		"C": {
-			"item": "minecraft:golden_helmet"
-		}
+		"A": "moremetals:aluminum_ingot",
+		"C": "minecraft:golden_helmet"
 	},
 	"result": {
 		"id": "moremetals:aluminum_helmet",

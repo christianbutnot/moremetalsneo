@@ -6,9 +6,7 @@
 		"AAA"
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:copper_nugget"
-		}
+		"A": "moremetals:copper_nugget"
 	},
 	"result": {
 		"id": "minecraft:copper_ingot",

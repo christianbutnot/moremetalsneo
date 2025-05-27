@@ -1,17 +1,9 @@
 {
-"type": "minecraft:crafting_shaped",
-	"pattern": [
-		"SSS",
-		"SSS",
-		"SSS"
-	],
-	"key": {
-		"S": {
-			"item": "moremetals:zinc_nugget"
-		}
-	},
-	"result": {
-		"id": "moremetals:zinc_ingot",
-		"count": 1
-	}
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:zinc_dust",
+  "result": {
+    "id": "moremetals:zinc_ingot"
+  }
 }

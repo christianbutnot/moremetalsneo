@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "moremetals:raw_lead"
-  },
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": "moremetals:raw_lead",
   "result": {
     "id": "moremetals:lead_ingot"
-  },
-  "experience": 0.6,
-  "cookingtime": 200
+  }
 }

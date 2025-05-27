@@ -6,12 +6,8 @@
 		"   "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:steel_ingot"
-		},
-		"C": {
-			"item": "minecraft:iron_helmet"
-		}
+		"A": "moremetals:steel_ingot",
+		"C": "minecraft:iron_helmet"
 	},
 	"result": {
 		"id": "moremetals:steel_helmet",

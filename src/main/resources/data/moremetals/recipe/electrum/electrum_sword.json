@@ -6,12 +6,8 @@
 		" S "
 	],
 	"key": {
-		"A": {
-			"item": "moremetals:electrum_ingot"
-		},
-		"S": {
-			"item": "minecraft:stick"
-		}
+		"A": "moremetals:electrum_ingot",
+		"S": "minecraft:stick"
 	},
 	"result": {
 		"id": "moremetals:electrum_sword",

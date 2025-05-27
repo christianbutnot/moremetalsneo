@@ -5,9 +5,7 @@
 		" I "
 	],
 	"key": {
-		"I": {
-			"item": "minecraft:netherite_ingot"
-		}
+		"I": "minecraft:netherite_ingot"
 	},
 	"result": {
 		"id": "moremetals:netherite_shears",

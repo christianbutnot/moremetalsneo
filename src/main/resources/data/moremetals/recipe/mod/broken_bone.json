@@ -4,12 +4,8 @@
 		"IC"
 	],
 	"key": {
-		"I": {
-			"item": "minecraft:bone"
-		},
-		"C": {
-			"tag": "moremetals:hammers"
-		}
+		"I": "minecraft:bone",
+		"C": "#moremetals:hammers"
 	},
 	"result": {
 		"id": "progressionutils:broken_bone",

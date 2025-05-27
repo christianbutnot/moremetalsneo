@@ -9,20 +9,21 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.block.entity.FuelValues;
 
 public class ImmortalCoalItem extends Item {
 
-	private final int burnTicks;
 
-	public ImmortalCoalItem(Properties properties, int burnTimeInTicks) {
+
+	public ImmortalCoalItem(Properties properties) {
 		super(properties);
-		this.burnTicks = burnTimeInTicks;
 	}
 	
 	@Override
-	public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-	    return this.burnTicks;
+	public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType, FuelValues fuelValues) {
+		return 57600;
 	}
 	@Override
 	public void appendHoverText(ItemStack stack, TooltipContext worldIn, List<Component> tooltip, TooltipFlag flagIn)
