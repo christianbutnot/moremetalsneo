@@ -10,7 +10,7 @@ import com.christianbutnot.moremetals.common.items.cookables.SulfurItem;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -22,185 +22,185 @@ public class ItemInit {
 	// RAW MATERIALS
 	public static final DeferredItem<Item> RAW_ALUMINUM = ITEMS.register("raw_aluminum",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "raw_aluminum")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "raw_aluminum")))));
 	public static final DeferredItem<Item> RAW_TIN = ITEMS.register("raw_tin",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "raw_tin")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "raw_tin")))));
 	public static final DeferredItem<Item> RAW_NICKEL = ITEMS.register("raw_nickel",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "raw_nickel")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "raw_nickel")))));
 	public static final DeferredItem<Item> RAW_SILVER = ITEMS.register("raw_silver",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "raw_silver")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "raw_silver")))));
 	public static final DeferredItem<Item> RAW_LEAD = ITEMS.register("raw_lead",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "raw_lead")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "raw_lead")))));
 	public static final DeferredItem<Item> RAW_ZINC = ITEMS.register("raw_zinc",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "raw_zinc")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "raw_zinc")))));
 	// INGOTS
 	public static final DeferredItem<Item> ALUMINUM_INGOT = ITEMS.register("aluminum_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "aluminum_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "aluminum_ingot")))));
 	public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "tin_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "tin_ingot")))));
 	public static final DeferredItem<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bronze_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "bronze_ingot")))));
 	public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "nickel_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "nickel_ingot")))));
 	public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "silver_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "silver_ingot")))));
 	public static final DeferredItem<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "lead_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "lead_ingot")))));
 	public static final DeferredItem<Item> ZINC_INGOT = ITEMS.register("zinc_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "zinc_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "zinc_ingot")))));
 	public static final DeferredItem<Item> ELECTRUM_INGOT = ITEMS.register("electrum_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "electrum_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "electrum_ingot")))));
 	public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "steel_ingot")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "steel_ingot")))));
 	
 
 	// NUGGETS
 	public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "aluminum_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "aluminum_nugget")))));
 	public static final DeferredItem<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "copper_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "copper_nugget")))));
 	public static final DeferredItem<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "tin_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "tin_nugget")))));
 	public static final DeferredItem<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bronze_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "bronze_nugget")))));
 	public static final DeferredItem<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "nickel_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "nickel_nugget")))));
 	public static final DeferredItem<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "silver_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "silver_nugget")))));
 	public static final DeferredItem<Item> LEAD_NUGGET = ITEMS.register("lead_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "lead_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "lead_nugget")))));
 	public static final DeferredItem<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "zinc_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "zinc_nugget")))));
 	public static final DeferredItem<Item> ELECTRUM_NUGGET = ITEMS.register("electrum_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "electrum_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "electrum_nugget")))));
 	public static final DeferredItem<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "steel_nugget")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "steel_nugget")))));
 
 	// DUSTS
 	public static final DeferredItem<Item> COAL_DUST = ITEMS.register("coal_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "coal_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "coal_dust")))));
 	public static final DeferredItem<Item> COPPER_DUST = ITEMS.register("copper_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "copper_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "copper_dust")))));
 	public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "iron_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "iron_dust")))));
 	public static final DeferredItem<Item> GOLD_DUST = ITEMS.register("gold_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "gold_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "gold_dust")))));
 	public static final DeferredItem<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "aluminum_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "aluminum_dust")))));
 	public static final DeferredItem<Item> TIN_DUST = ITEMS.register("tin_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "tin_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "tin_dust")))));
 	public static final DeferredItem<Item> BRONZE_DUST = ITEMS.register("bronze_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bronze_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "bronze_dust")))));
 	public static final DeferredItem<Item> NICKEL_DUST = ITEMS.register("nickel_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "nickel_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "nickel_dust")))));
 	public static final DeferredItem<Item> SILVER_DUST = ITEMS.register("silver_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "silver_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "silver_dust")))));
 	public static final DeferredItem<Item> LEAD_DUST = ITEMS.register("lead_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "lead_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "lead_dust")))));
 	public static final DeferredItem<Item> ZINC_DUST = ITEMS.register("zinc_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "zinc_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "zinc_dust")))));
 	public static final DeferredItem<Item> ELECTRUM_DUST = ITEMS.register("electrum_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "electrum_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "electrum_dust")))));
 	public static final DeferredItem<Item> STEEL_DUST = ITEMS.register("steel_dust",
 			() -> new ResourceItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "steel_dust")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "steel_dust")))));
 	// MISC DUSTS
 	public static final DeferredItem<Item> SULFUR_POWDER = ITEMS.register("sulfur_powder",
 			() -> new SulfurItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "sulfur_powder")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "sulfur_powder")))));
 
 	// FUELS
 	public static final DeferredItem<Item> ENGULFED_COAL = ITEMS.register("engulfed_coal",
 			() -> new EngulfedCoalItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "engulfed_coal")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "engulfed_coal")))));
 	public static final DeferredItem<Item> ENIGMATIC_COAL = ITEMS.register("enigmatic_coal",
 			() -> new EnigmaticCoalItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "enigmatic_coal")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "enigmatic_coal")))));
 	public static final DeferredItem<Item> IMMORTAL_COAL = ITEMS.register("immortal_coal",
 			() -> new ImmortalCoalItem(new Item.Properties().setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "immortal_coal")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "immortal_coal")))));
 
 	// more metals hammers
 	public static final DeferredItem<Item> ALUMINUM_HAMMER = ITEMS.register("aluminum_hammer",
 			() -> new HammerItem(new Item.Properties().durability(32).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "aluminum_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "aluminum_hammer")))));
 	public static final DeferredItem<Item> COPPER_HAMMER = ITEMS.register("copper_hammer",
 			() -> new HammerItem(new Item.Properties().durability(48).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "copper_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "copper_hammer")))));
 	public static final DeferredItem<Item> TIN_HAMMER = ITEMS.register("tin_hammer",
 			() -> new HammerItem(new Item.Properties().durability(48).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "tin_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "tin_hammer")))));
 	public static final DeferredItem<Item> BRONZE_HAMMER = ITEMS.register("bronze_hammer",
 			() -> new HammerItem(new Item.Properties().durability(64).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bronze_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "bronze_hammer")))));
 	public static final DeferredItem<Item> NICKEL_HAMMER = ITEMS.register("nickel_hammer",
 			() -> new HammerItem(new Item.Properties().durability(96).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "nickel_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "nickel_hammer")))));
 	public static final DeferredItem<Item> SILVER_HAMMER = ITEMS.register("silver_hammer",
 			() -> new HammerItem(new Item.Properties().durability(96).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "silver_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "silver_hammer")))));
 	public static final DeferredItem<Item> LEAD_HAMMER = ITEMS.register("lead_hammer",
 			() -> new HammerItem(new Item.Properties().durability(128).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "lead_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "lead_hammer")))));
 	public static final DeferredItem<Item> ZINC_HAMMER = ITEMS.register("zinc_hammer",
 			() -> new HammerItem(new Item.Properties().durability(128).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "zinc_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "zinc_hammer")))));
 	public static final DeferredItem<Item> ELECTRUM_HAMMER = ITEMS.register("electrum_hammer",
 			() -> new HammerItem(new Item.Properties().durability(128).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "electrum_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "electrum_hammer")))));
 	public static final DeferredItem<Item> STEEL_HAMMER = ITEMS.register("steel_hammer",
 			() -> new HammerItem(new Item.Properties().durability(256).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "steel_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "steel_hammer")))));
 
 	// vanilla hammers
 	public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
 			() -> new HammerItem(new Item.Properties().durability(256).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "iron_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "iron_hammer")))));
 	public static final DeferredItem<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
 			() -> new HammerItem(new Item.Properties().durability(512).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "diamond_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "diamond_hammer")))));
 	public static final DeferredItem<Item> EMERALD_HAMMER = ITEMS.register("emerald_hammer",
 			() -> new HammerItem(new Item.Properties().durability(512).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "emerald_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "emerald_hammer")))));
 	public static final DeferredItem<Item> NETHERITE_HAMMER = ITEMS.register("netherite_hammer",
 			() -> new HammerItem(new Item.Properties().durability(1024).setId(ResourceKey
-					.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Main.MODID, "netherite_hammer")))));
+					.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Main.MODID, "netherite_hammer")))));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

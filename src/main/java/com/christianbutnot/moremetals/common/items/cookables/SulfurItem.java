@@ -1,6 +1,6 @@
 package com.christianbutnot.moremetals.common.items.cookables;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
@@ -9,7 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Item.Properties;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.entity.FuelValues;
 
@@ -21,15 +21,18 @@ public class SulfurItem extends Item {
 	
 	@Override
 	public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType, FuelValues fuelValues) {
-		return 1200;
+		return 2400;
 	}
+	
+	@SuppressWarnings("deprecation")
 	@Override
-	public void appendHoverText(ItemStack stack, TooltipContext worldIn, List<Component> tooltip, TooltipFlag flagIn)
-	{
-	    super.appendHoverText(stack, worldIn, tooltip, flagIn);
+	public void appendHoverText(ItemStack stack, @Nullable TooltipContext level, TooltipDisplay tooltipDisplay, Consumer<Component> components,
+			TooltipFlag flag) {
 
-	    tooltip.add(Component.literal("Resource Item").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
-	    tooltip.add(Component.literal("Cooks 6 Items").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+		components.accept(Component.literal("Resource Item").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
+		components.accept(Component.literal("Cooks 6 Items").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+	
+	super.appendHoverText(stack, level, tooltipDisplay, components, flag);
 	}
 
 }

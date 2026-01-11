@@ -3,7 +3,7 @@ package com.christianbutnot.moremetals.utils;
 import com.christianbutnot.moremetals.Main;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -56,39 +56,39 @@ public class CustomTags {
 
 	public static final TagKey<Item> HAMMERS = modItemTag("hammers");
 	
-	public static TagKey<Block> blockTag(ResourceLocation tagLocaction) {
+	public static TagKey<Block> blockTag(Identifier tagLocaction) {
 		return TagKey.create(Registries.BLOCK, tagLocaction);
 	}
 
-	public static TagKey<Item> itemTag(ResourceLocation tagLocaction) {
+	public static TagKey<Item> itemTag(Identifier tagLocaction) {
 		return TagKey.create(Registries.ITEM, tagLocaction);
 	}
 
 	public static TagKey<Block> modBlockTag(String tagName) {
-		return CustomTags.blockTag(ResourceLocation.fromNamespaceAndPath(Main.MODID, tagName));
+		return CustomTags.blockTag(Identifier.fromNamespaceAndPath(Main.MODID, tagName));
 	}
 
 	public static TagKey<Block> modOreTag(String tagName) {
-		return CustomTags.blockTag(ResourceLocation.fromNamespaceAndPath("c/block/ores/", tagName));
+		return CustomTags.blockTag(Identifier.fromNamespaceAndPath("c/block/ores/", tagName));
 	}
 
 	public static TagKey<Item> modOreItemTag(String tagName) {
-		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/ores/", tagName));
+		return CustomTags.itemTag(Identifier.fromNamespaceAndPath("c/item/ores/", tagName));
 	}
 	
 	public static TagKey<Item> modIngotTag(String tagLocaction) {
-		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/ingots/", tagLocaction));
+		return CustomTags.itemTag(Identifier.fromNamespaceAndPath("c/item/ingots/", tagLocaction));
 	}
 	
 	public static TagKey<Item> modItemTag(String tagLocaction) {
-		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/ingots/", tagLocaction));
+		return CustomTags.itemTag(Identifier.fromNamespaceAndPath("c/item/ingots/", tagLocaction));
 	}
 
 	public static TagKey<Item> modNuggetTag(String tagLocaction) {
-		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/nuggets/", tagLocaction));
+		return CustomTags.itemTag(Identifier.fromNamespaceAndPath("c/item/nuggets/", tagLocaction));
 	}
 
 	public static TagKey<Item> modDustTag(String tagLocaction) {
-		return CustomTags.itemTag(ResourceLocation.fromNamespaceAndPath("c/item/dusts/", tagLocaction));
+		return CustomTags.itemTag(Identifier.fromNamespaceAndPath("c/item/dusts/", tagLocaction));
 	}
 }

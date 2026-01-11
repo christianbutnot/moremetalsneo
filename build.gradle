@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.78'
+    id 'net.neoforged.moddev' version '2.0.133'
     id 'idea'
 }
 
@@ -18,14 +18,14 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    mavenLocal()
+    // Add here additional repositories if required by some of the dependencies below.
 }
 
 base {
     archivesName = mod_id
 }
 
-// Mojang ships Java 21 to end users starting in 1.20.5, so mods should target Java 21.
+// Mojang ships Java 21 to end users in 1.21.11, so mods should target Java 21.
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
@@ -121,7 +121,8 @@ repositories {
 }
 
 dependencies {
-	implementation "curse.maven:jalm-1121892:6268048"
+    implementation "curse.maven:jei-238222:7428957"
+	implementation "curse.maven:jalm-1121892:7352643"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -131,8 +132,6 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
-            neo_version_range      : neo_version_range,
-            loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,
